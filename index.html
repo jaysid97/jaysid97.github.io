@@ -3,346 +3,431 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jayraj S.V &ndash; Software Developer</title>
-  <meta name="description" content="Portfolio of Jayraj S.V &ndash; Software Developer building AI tools, voice apps &amp; green tech." />
+  <title>JAYFLIX &ndash; Jayraj S.V | Cinematic Software &amp; AI Streaming Platform</title>
+  <meta name="description" content="Stream the next generation of software, AI platforms, voice technologies, and green-tech applications built by Jayraj S.V (jaysid97)." />
+  <meta name="keywords" content="Jayraj S.V, jaysid97, software developer, portfolio, AI developer, voice technology, green tech, cinematic portfolio, netflix style" />
+  <meta name="author" content="Jayraj S.V" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jaysid97.github.io/" />
+  <meta property="og:title" content="JAYFLIX &ndash; Jayraj S.V | Cinematic Software &amp; AI Streaming Platform" />
+  <meta property="og:description" content="Stream next-gen AI tools, voice applications, and eco-tech platforms built with clean, high-performance code." />
+  <meta property="og:image" content="./assets/posters/lexipulse.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JAYFLIX &ndash; Jayraj S.V | Cinematic Software &amp; AI Streaming Platform" />
+  <meta name="twitter:description" content="Stream next-gen AI tools, voice applications, and eco-tech platforms built with clean, high-performance code." />
+  <meta name="twitter:image" content="./assets/posters/lexipulse.jpg" />
+
+  <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --bg:        #060913;
-      --bg2:       #0d1117;
-      --bg3:       #161b22;
-      --accent:    #58a6ff;
-      --accent2:   #a78bfa;
-      --accent3:   #34d399;
-      --text:      #e6edf3;
-      --muted:     #8b949e;
-      --border:    rgba(88,166,255,0.15);
-      --glass:     rgba(13,17,23,0.7);
-      --glow:      rgba(88,166,255,0.25);
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); overflow-x: hidden; line-height: 1.6; }
-    body::before {
-      content: ''; position: fixed; inset: 0;
-      background-image: linear-gradient(rgba(88,166,255,.03) 1px, transparent 1px), linear-gradient(90deg, rgba(88,166,255,.03) 1px, transparent 1px);
-      background-size: 50px 50px; pointer-events: none; z-index: 0;
-    }
-    .orb { position: fixed; border-radius: 50%; filter: blur(120px); opacity: 0.18; pointer-events: none; z-index: 0; animation: float 8s ease-in-out infinite; }
-    .orb-1 { width:600px; height:600px; background:#58a6ff; top:-200px; left:-200px; animation-delay:0s; }
-    .orb-2 { width:500px; height:500px; background:#a78bfa; bottom:-150px; right:-100px; animation-delay:3s; }
-    .orb-3 { width:300px; height:300px; background:#34d399; top:40%; left:50%; animation-delay:6s; }
-    @keyframes float { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-30px) scale(1.05); } }
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1rem 4rem; background: rgba(6,9,19,0.8); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); transition: all 0.3s ease; }
-    .nav-logo { font-family: 'Fira Code', monospace; font-size: 1.1rem; color: var(--accent); font-weight: 600; text-decoration: none; }
-    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.02em; transition: color 0.2s; position: relative; }
-    .nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; right: 0; height: 1px; background: var(--accent); transform: scaleX(0); transition: transform 0.2s; }
-    .nav-links a:hover { color: var(--text); }
-    .nav-links a:hover::after { transform: scaleX(1); }
-    #hero { position: relative; z-index: 1; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 6rem 4rem 4rem; max-width: 1100px; margin: 0 auto; }
-    .hero-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(88,166,255,0.1); border: 1px solid rgba(88,166,255,0.3); border-radius: 100px; padding: 0.35rem 1rem; font-size: 0.8rem; color: var(--accent); font-family: 'Fira Code', monospace; margin-bottom: 1.5rem; animation: fadeSlideUp 0.6s ease both; }
-    .hero-tag .dot { width:6px; height:6px; border-radius:50%; background:var(--accent3); animation: pulse 2s infinite; }
-    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-    .hero-name { font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 0.5rem; animation: fadeSlideUp 0.6s 0.1s ease both; }
-    .hero-name span { background: linear-gradient(135deg, #58a6ff 0%, #a78bfa 50%, #34d399 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    #typed-line { font-family: 'Fira Code', monospace; font-size: clamp(1rem, 2.5vw, 1.4rem); color: var(--muted); margin-bottom: 1.5rem; min-height: 2rem; animation: fadeSlideUp 0.6s 0.2s ease both; }
-    #typed-line .cursor { display: inline-block; width: 2px; height: 1.2em; background: var(--accent); margin-left: 2px; vertical-align: middle; animation: blink 0.7s infinite; }
-    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
-    .hero-desc { font-size: 1.05rem; color: var(--muted); max-width: 560px; line-height: 1.8; margin-bottom: 2.5rem; animation: fadeSlideUp 0.6s 0.3s ease both; }
-    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeSlideUp 0.6s 0.4s ease both; }
-    .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.8rem 1.8rem; border-radius: 8px; font-size: 0.95rem; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: all 0.25s ease; }
-    .btn-primary { background: linear-gradient(135deg, #58a6ff, #a78bfa); color: #fff; box-shadow: 0 0 30px rgba(88,166,255,0.35); }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 0 50px rgba(88,166,255,0.55); }
-    .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border); backdrop-filter: blur(10px); }
-    .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
-    .hero-scroll { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: var(--muted); font-size: 0.75rem; letter-spacing: 0.1em; animation: fadeIn 1s 1s ease both; }
-    .scroll-line { width:1px; height:40px; background: linear-gradient(to bottom, var(--accent), transparent); animation: scrollDown 2s infinite; }
-    @keyframes scrollDown { 0%{opacity:0;transform:scaleY(0);transform-origin:top} 50%{opacity:1} 100%{opacity:0;transform:scaleY(1);transform-origin:top} }
-    section { position: relative; z-index: 1; padding: 5rem 4rem; max-width: 1100px; margin: 0 auto; }
-    .section-label { font-family: 'Fira Code', monospace; font-size: 0.8rem; color: var(--accent); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 0.75rem; }
-    .section-title { font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1rem; }
-    .section-title span { color: var(--accent); }
-    .section-desc { color: var(--muted); max-width: 550px; font-size: 1rem; line-height: 1.8; margin-bottom: 3rem; }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-    .about-text p { color: var(--muted); line-height: 1.9; margin-bottom: 1rem; }
-    .about-text p strong { color: var(--text); }
-    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .stat-card { background: var(--glass); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; backdrop-filter: blur(10px); transition: border-color 0.3s, transform 0.3s; }
-    .stat-card:hover { border-color: var(--accent); transform: translateY(-3px); }
-    .stat-num { font-size: 2rem; font-weight: 800; color: var(--accent); font-family: 'Fira Code', monospace; }
-    .stat-label { font-size: 0.8rem; color: var(--muted); margin-top: 0.25rem; }
-    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.75rem; }
-    .skill-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--glass); border: 1px solid var(--border); border-radius: 8px; padding: 0.5rem 1rem; font-size: 0.85rem; font-weight: 500; color: var(--text); backdrop-filter: blur(10px); transition: all 0.2s; cursor: default; }
-    .skill-badge:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); box-shadow: 0 0 15px rgba(88,166,255,0.15); }
-    .skill-badge .icon { font-size: 1rem; }
-    .skills-category { margin-bottom: 2rem; }
-    .skills-cat-label { font-size: 0.8rem; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1rem; font-family: 'Fira Code', monospace; }
-    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
-    .project-card { background: var(--glass); border: 1px solid var(--border); border-radius: 16px; padding: 1.75rem; backdrop-filter: blur(10px); transition: all 0.3s ease; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 0.75rem; position: relative; overflow: hidden; }
-    .project-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(88,166,255,0.05), transparent); opacity: 0; transition: opacity 0.3s; }
-    .project-card:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: 0 20px 60px rgba(88,166,255,0.12); }
-    .project-card:hover::before { opacity: 1; }
-    .project-header { display: flex; align-items: center; justify-content: space-between; }
-    .project-icon { font-size: 1.5rem; }
-    .project-arrow { color: var(--muted); font-size: 1.1rem; transition: transform 0.2s, color 0.2s; }
-    .project-card:hover .project-arrow { transform: translate(3px,-3px); color: var(--accent); }
-    .project-name { font-size: 1.05rem; font-weight: 700; color: var(--text); }
-    .project-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.6; flex: 1; }
-    .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: auto; }
-    .tag { background: rgba(88,166,255,0.1); border: 1px solid rgba(88,166,255,0.2); border-radius: 4px; padding: 0.2rem 0.6rem; font-size: 0.72rem; color: var(--accent); font-family: 'Fira Code', monospace; }
-    .contact-wrapper { background: var(--glass); border: 1px solid var(--border); border-radius: 20px; padding: 3rem; backdrop-filter: blur(20px); text-align: center; position: relative; overflow: hidden; }
-    .contact-wrapper::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle at center, rgba(88,166,255,0.06) 0%, transparent 60%); pointer-events: none; }
-    .contact-title { font-size: 2rem; font-weight: 800; margin-bottom: 0.75rem; }
-    .contact-sub { color: var(--muted); margin-bottom: 2.5rem; font-size: 1rem; }
-    .social-links { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
-    .social-btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.4rem; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 8px; color: var(--text); text-decoration: none; font-size: 0.88rem; font-weight: 500; transition: all 0.2s; }
-    .social-btn:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); background: rgba(88,166,255,0.08); }
-    footer { position: relative; z-index: 1; text-align: center; padding: 2rem 4rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; font-family: 'Fira Code', monospace; }
-    footer span { color: var(--accent); }
-    .divider { height: 1px; background: linear-gradient(to right, transparent, var(--border), transparent); margin: 0 4rem; }
-    @keyframes fadeSlideUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
-    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    .reveal { opacity:0; transform:translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
-    .reveal.visible { opacity:1; transform:none; }
-    @media (max-width: 768px) {
-      nav { padding: 1rem 1.5rem; }
-      .nav-links { gap: 1.5rem; }
-      #hero, section { padding-left: 1.5rem; padding-right: 1.5rem; }
-      .about-grid { grid-template-columns: 1fr; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .hero-name { font-size: 2.4rem; }
-      .contact-wrapper { padding: 2rem 1.5rem; }
-      .divider { margin: 0 1.5rem; }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-  <nav id="navbar">
-    <a href="#hero" class="nav-logo">&lt;jaysid97 /&gt;</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <div id="hero">
-    <div class="hero-tag">
-      <span class="dot"></span>
-      Available for opportunities
-    </div>
-    <h1 class="hero-name">Hi, I'm <span>Jayraj S.V</span></h1>
-    <div id="typed-line"><span id="typed-text"></span><span class="cursor"></span></div>
-    <p class="hero-desc">
-      Software Developer passionate about building impactful products &mdash;
-      from AI-powered tools and voice applications to green-tech solutions.
-      I turn complex ideas into clean, efficient code. &#x1F680;
-    </p>
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">
-        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4M3 7v10l9 4M3 7l9 4m0 10V11m9-4v10l-9 4"/></svg>
-        View Projects
+
+  <!-- Ambient Cinematic Lighting Mesh -->
+  <div class="ambient-glow-mesh" aria-hidden="true">
+    <div class="ambient-circle ambient-1"></div>
+    <div class="ambient-circle ambient-2"></div>
+    <div class="ambient-circle ambient-3"></div>
+  </div>
+
+  <!-- Top Navigation Bar -->
+  <header class="cinema-navbar" id="cinema-navbar">
+    <div class="nav-left">
+      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="JAYFLIX Home">
+        <div class="logo-icon">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+        </div>
+        <span class="logo-text">JAY<span>FLIX</span></span>
       </a>
-      <a href="https://github.com/jaysid97" target="_blank" rel="noopener" class="btn btn-outline">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        GitHub
-      </a>
-      <a href="#contact" class="btn btn-outline">&#x2709;&#xFE0F; Get in touch</a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links-list">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#trending">Blockbusters</a></li>
+          <li><a href="#ai-series">AI Series</a></li>
+          <li><a href="#green-civic">Impact &amp; Civic</a></li>
+          <li><a href="#director">Director's Bio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="hero-scroll">
-      <span>SCROLL</span>
-      <div class="scroll-line"></div>
+
+    <div class="nav-right">
+      <!-- Live Search -->
+      <div class="search-wrapper">
+        <span class="search-icon-btn" aria-hidden="true">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </span>
+        <input type="text" id="search-input" class="search-input" placeholder="Search titles, tech..." aria-label="Search titles or technologies" />
+      </div>
+
+      <!-- Ambient Audio Toggle -->
+      <button class="audio-toggle-btn" id="audio-toggle-btn" aria-label="Toggle Ambient Audio Synth">
+        <div class="sound-waves" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="audio-label">Audio Off</span>
+      </button>
+
+      <!-- Profile Avatar -->
+      <a href="#director" class="user-profile-badge" title="Director Profile">
+        <div class="avatar-img">JS</div>
+        <span class="avatar-name">Jayraj S.V</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Streaming Banner -->
+  <main>
+    <section class="hero-banner" id="hero" aria-label="Featured Showreel">
+      <div class="hero-media-container">
+        <canvas id="hero-canvas" class="hero-canvas-backdrop" width="1280" height="720"></canvas>
+        <img id="hero-poster-img" class="hero-image-backdrop" src="./assets/posters/lexipulse.jpg" alt="Featured Production Backdrop" />
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badges-row">
+          <span class="badge-top10">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            TOP 10 IN SOFTWARE TODAY #1
+          </span>
+          <span class="badge-quality">4K ULTRA HD</span>
+          <span class="badge-quality">HDR10+</span>
+          <span class="badge-match" id="hero-match-badge">99% Match</span>
+          <span class="badge-year">2026 Production</span>
+          <span class="badge-category" id="hero-category-badge">AI / NLP PLATFORM</span>
+        </div>
+
+        <h1 class="hero-title" id="hero-title">LexiPulse AI</h1>
+        <div class="hero-tagline" id="hero-tagline">The Future. Reimagined.</div>
+        <p class="hero-synopsis" id="hero-synopsis">
+          Next-generation AI-powered language intelligence platform. Engineered for ultra-fast, real-time natural language processing, semantic understanding, sentiment analysis, and intelligent automated summarization across multi-lingual corpora.
+        </p>
+
+        <div class="hero-tech-tags" id="hero-tags">
+          <span class="tech-pill">JavaScript</span>
+          <span class="tech-pill">AI/NLP</span>
+          <span class="tech-pill">Transformers</span>
+          <span class="tech-pill">GitHub Pages</span>
+        </div>
+
+        <div class="hero-cta-group">
+          <button class="btn-cinema btn-play" id="hero-play-btn" aria-label="Watch Showreel Trailer">
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            Watch Trailer
+          </button>
+          <button class="btn-cinema btn-info" id="hero-info-btn" aria-label="More Information & Architecture">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+            More Info
+          </button>
+          <button class="btn-watchlist-add" id="hero-watchlist-btn" title="Add to My List" aria-label="Add to Watchlist">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Carousel Thumb Selectors -->
+      <div class="hero-selectors" id="hero-selectors" aria-label="Featured Titles Carousel">
+        <!-- Dynamically rendered -->
+      </div>
+    </section>
+
+    <!-- Streaming Rows & Movie Shelves -->
+    <div class="streaming-section">
+
+      <!-- Dynamic Watchlist Row (Shown if items exist) -->
+      <section class="shelf-container" id="shelf-watchlist-wrap" style="display:none;" aria-label="My Watchlist">
+        <div class="shelf-header">
+          <div class="shelf-title-wrap">
+            <h2 class="shelf-title">⭐ My List</h2>
+            <span class="shelf-subtitle">Saved by you</span>
+          </div>
+        </div>
+        <div class="shelf-viewport">
+          <button class="shelf-scroll-btn shelf-scroll-left" data-target="shelf-watchlist-slider" aria-label="Scroll Left">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="shelf-slider" id="shelf-watchlist-slider"></div>
+          <button class="shelf-scroll-btn shelf-scroll-right" data-target="shelf-watchlist-slider" aria-label="Scroll Right">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Row 1: Trending Blockbusters -->
+      <section class="shelf-container" id="trending" aria-label="Trending Blockbusters">
+        <div class="shelf-header">
+          <div class="shelf-title-wrap">
+            <h2 class="shelf-title">🔥 Trending Blockbusters</h2>
+            <span class="shelf-subtitle">Top rated open-source engineering</span>
+          </div>
+          <a href="https://github.com/jaysid97?tab=repositories" target="_blank" rel="noopener" class="shelf-explore-all">
+            Explore All on GitHub &rarr;
+          </a>
+        </div>
+        <div class="shelf-viewport">
+          <button class="shelf-scroll-btn shelf-scroll-left" data-target="shelf-trending-slider" aria-label="Scroll Left">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="shelf-slider" id="shelf-trending-slider">
+            <!-- Dynamically populated -->
+          </div>
+          <button class="shelf-scroll-btn shelf-scroll-right" data-target="shelf-trending-slider" aria-label="Scroll Right">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Row 2: AI & High-Performance Systems -->
+      <section class="shelf-container" id="ai-series" aria-label="AI and High Performance Systems">
+        <div class="shelf-header">
+          <div class="shelf-title-wrap">
+            <h2 class="shelf-title">⚡ High-Performance &amp; Neural AI Series</h2>
+            <span class="shelf-subtitle">Autonomous agents &amp; zero-entropy architecture</span>
+          </div>
+        </div>
+        <div class="shelf-viewport">
+          <button class="shelf-scroll-btn shelf-scroll-left" data-target="shelf-ai-slider" aria-label="Scroll Left">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="shelf-slider" id="shelf-ai-slider">
+            <!-- Dynamically populated -->
+          </div>
+          <button class="shelf-scroll-btn shelf-scroll-right" data-target="shelf-ai-slider" aria-label="Scroll Right">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Row 3: Green Tech & Civic Impact -->
+      <section class="shelf-container" id="green-civic" aria-label="Green Tech and Civic Originals">
+        <div class="shelf-header">
+          <div class="shelf-title-wrap">
+            <h2 class="shelf-title">🌿 Green Tech &amp; Real-World Impact Originals</h2>
+            <span class="shelf-subtitle">Eco analytics, voice challenges &amp; civic tech</span>
+          </div>
+        </div>
+        <div class="shelf-viewport">
+          <button class="shelf-scroll-btn shelf-scroll-left" data-target="shelf-impact-slider" aria-label="Scroll Left">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="shelf-slider" id="shelf-impact-slider">
+            <!-- Dynamically populated -->
+          </div>
+          <button class="shelf-scroll-btn shelf-scroll-right" data-target="shelf-impact-slider" aria-label="Scroll Right">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Director Spotlight & Production Gear (About Me & Skills) -->
+    <section class="spotlight-section" id="director" aria-label="Director Spotlight">
+      <div class="spotlight-card">
+        <div>
+          <div class="director-header-label">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+            DIRECTOR &amp; LEAD ARCHITECT
+          </div>
+          <h2 class="director-name">Jayraj S.V</h2>
+          <div class="director-role">Software Developer &middot; AI Builder &middot; Open Source Contributor</div>
+          <p class="director-bio">
+            Passionate software developer directing products at the intersection of <strong>AI, voice technology, and sustainability</strong>.
+            From crafting real-time neural language pipelines to building zero-entropy distributed systems, I turn complex ideas into robust, production-grade applications that make an impact.
+          </p>
+
+          <div class="director-stats-grid">
+            <div class="director-stat-box">
+              <div class="stat-val">6<span>+</span></div>
+              <div class="stat-lbl">Public Productions</div>
+            </div>
+            <div class="director-stat-box">
+              <div class="stat-val">8<span>+</span></div>
+              <div class="stat-lbl">Core Languages</div>
+            </div>
+            <div class="director-stat-box">
+              <div class="stat-val">99<span>%</span></div>
+              <div class="stat-lbl">Clean Code Score</div>
+            </div>
+            <div class="director-stat-box">
+              <div class="stat-val">100<span>%</span></div>
+              <div class="stat-lbl">Production Ready</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Stack Gear -->
+        <div class="skills-shelf-wrap">
+          <div class="skill-category-title">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            STUDIO PRODUCTION GEAR &amp; TECH STACK
+          </div>
+          <div class="skills-pill-group" id="tech-crew-grid">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cinema Theater Modal (Interactive Player & Episode Specs) -->
+  <div class="cinema-modal-overlay" id="cinema-modal-overlay" role="dialog" aria-modal="true" aria-label="Cinema Theater Player">
+    <div class="cinema-modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Theater">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+
+      <!-- Video Theater Screen -->
+      <div class="modal-theater-screen" id="modal-theater-screen">
+        <div class="theater-ambient-glow" id="theater-ambient-glow"></div>
+        <canvas id="modal-theater-canvas" class="modal-theater-canvas" width="1280" height="720"></canvas>
+
+        <!-- Player HUD Controls -->
+        <div class="player-controls-hud">
+          <div class="progress-track-wrapper" id="progress-track-wrapper">
+            <div class="progress-buffer-bar" style="width:75%;"></div>
+            <div class="progress-fill-bar" id="progress-fill-bar"></div>
+            <div class="progress-handle" id="progress-handle"></div>
+          </div>
+
+          <div class="player-buttons-row">
+            <div class="controls-left">
+              <button class="control-btn" id="player-play-btn" title="Play / Pause (Space)" aria-label="Play or Pause">
+                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              </button>
+              <button class="control-btn" id="player-skip-back" title="Rewind 10s" aria-label="Rewind 10 seconds">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"/></svg>
+              </button>
+              <button class="control-btn" id="player-skip-fwd" title="Forward 10s" aria-label="Forward 10 seconds">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M10 4v3.38A9.955 9.955 0 0 1 12 7c4.65 0 8.58 3.03 9.97 7.22l-2.37.78C18.55 11.81 15.54 9.5 12 9.5c-1.96 0-3.73.72-5.12 1.88L10.5 15H1.5V6l3.6 3.6C6.95 7.99 9.35 7 12 7c.69 0 1.36.08 2 .22V4l-4 0z"/></svg>
+              </button>
+              <span class="time-display" id="time-display">00:00 / 03:00</span>
+            </div>
+
+            <div class="controls-right">
+              <button class="control-btn" id="player-volume-btn" title="Volume" aria-label="Volume">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+              </button>
+              <button class="control-btn" id="player-fullscreen-btn" title="Fullscreen" aria-label="Fullscreen">
+                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Info Details & Feature Episodes -->
+      <div class="modal-info-body">
+        <div class="modal-title-bar">
+          <div>
+            <h3 class="modal-project-title" id="modal-project-title">LexiPulse AI</h3>
+            <div class="modal-meta-pills" id="modal-meta-pills">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+          <div class="modal-actions-group">
+            <a href="#" target="_blank" rel="noopener" class="btn-launch-live" id="modal-launch-live">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Launch Live App
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="btn-github-code" id="modal-github">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              View Source
+            </a>
+          </div>
+        </div>
+
+        <p class="modal-synopsis-text" id="modal-synopsis-text"></p>
+
+        <!-- Episodes & Deep Dive Chapters -->
+        <div class="episodes-section">
+          <div class="episodes-heading">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></svg>
+            Production Episodes &amp; Architecture Chapters
+          </div>
+          <div class="episodes-list" id="episodes-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="divider"></div>
-  <section id="about">
-    <div class="reveal">
-      <div class="section-label">// about_me</div>
-      <h2 class="section-title">Who am <span>I</span>?</h2>
-    </div>
-    <div class="about-grid reveal">
-      <div class="about-text">
-        <p>I'm <strong>Jayraj S.V</strong>, a passionate Software Developer with a love for building products that sit at the intersection of <strong>AI, voice technology, and sustainability</strong>.</p>
-        <p>My journey spans a diverse tech stack &mdash; from <strong>Python &amp; JavaScript</strong> for backend and AI work, to <strong>TypeScript</strong> for robust applications, and <strong>Go</strong> for high-performance services.</p>
-        <p>When I'm not writing code, I'm exploring new frameworks, contributing to open-source, or brainstorming the next impactful idea that could make the world a little bit better. &#x1F331;</p>
-      </div>
-      <div class="about-stats">
-        <div class="stat-card"><div class="stat-num">6+</div><div class="stat-label">Public Repos</div></div>
-        <div class="stat-card"><div class="stat-num">6+</div><div class="stat-label">Languages</div></div>
-        <div class="stat-card"><div class="stat-num">AI</div><div class="stat-label">Powered Projects</div></div>
-        <div class="stat-card"><div class="stat-num">&#x1F331;</div><div class="stat-label">Green Tech Enthusiast</div></div>
-      </div>
-    </div>
-  </section>
-  <div class="divider"></div>
-  <section id="skills">
-    <div class="reveal">
-      <div class="section-label">// tech_stack</div>
-      <h2 class="section-title">Skills &amp; <span>Tools</span></h2>
-      <p class="section-desc">Technologies I work with day-to-day to build fast, scalable, and maintainable software.</p>
-    </div>
-    <div class="reveal">
-      <div class="skills-category">
-        <div class="skills-cat-label">Languages</div>
-        <div class="skills-grid">
-          <span class="skill-badge"><span class="icon">&#x1F40D;</span> Python</span>
-          <span class="skill-badge"><span class="icon">&#x1F7E8;</span> JavaScript</span>
-          <span class="skill-badge"><span class="icon">&#x1F537;</span> TypeScript</span>
-          <span class="skill-badge"><span class="icon">&#x26A1;</span> Go</span>
-          <span class="skill-badge"><span class="icon">&#x2615;</span> Java</span>
-          <span class="skill-badge"><span class="icon">&#x2699;&#xFE0F;</span> C / C++</span>
-          <span class="skill-badge"><span class="icon">&#x1F30D;</span> HTML</span>
-          <span class="skill-badge"><span class="icon">&#x1F3A8;</span> CSS</span>
+
+  <!-- Studio Headquarters & Footer -->
+  <footer class="cinema-footer" id="contact">
+    <div class="footer-inner">
+      <div>
+        <div class="brand-logo" style="margin-bottom:1rem;">
+          <div class="logo-icon">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
+          </div>
+          <span class="logo-text">JAY<span>FLIX</span></span>
         </div>
+        <p class="footer-brand-desc">
+          Streaming next-generation software architecture, high-velocity AI platforms, voice technologies, and green-tech applications. Built by Jayraj S.V.
+        </p>
       </div>
-      <div class="skills-category">
-        <div class="skills-cat-label">Frameworks &amp; Libraries</div>
-        <div class="skills-grid">
-          <span class="skill-badge"><span class="icon">&#x269B;&#xFE0F;</span> React</span>
-          <span class="skill-badge"><span class="icon">&#x1F7E2;</span> Node.js</span>
-          <span class="skill-badge"><span class="icon">&#x26A1;</span> FastAPI</span>
-          <span class="skill-badge"><span class="icon">&#x1F343;</span> Spring Boot</span>
-          <span class="skill-badge"><span class="icon">&#x1F399;&#xFE0F;</span> Voice SDKs</span>
-        </div>
+
+      <div>
+        <div class="footer-links-title">Production Categories</div>
+        <ul class="footer-links-list">
+          <li><a href="#trending">Trending Blockbusters</a></li>
+          <li><a href="#ai-series">AI &amp; Neural Systems</a></li>
+          <li><a href="#green-civic">Green Tech &amp; Eco Analytics</a></li>
+          <li><a href="#director">Director's Studio &amp; Tech Stack</a></li>
+        </ul>
       </div>
-      <div class="skills-category">
-        <div class="skills-cat-label">Tools &amp; Platforms</div>
-        <div class="skills-grid">
-          <span class="skill-badge"><span class="icon">&#x1F419;</span> GitHub</span>
-          <span class="skill-badge"><span class="icon">&#x1F433;</span> Docker</span>
-          <span class="skill-badge"><span class="icon">&#x2601;&#xFE0F;</span> AWS</span>
-          <span class="skill-badge"><span class="icon">&#x1F418;</span> PostgreSQL</span>
-          <span class="skill-badge"><span class="icon">&#x1F343;</span> MongoDB</span>
-          <span class="skill-badge"><span class="icon">&#x1F534;</span> Redis</span>
-          <span class="skill-badge"><span class="icon">&#x1F427;</span> Linux</span>
+
+      <div>
+        <div class="footer-links-title">Connect with Director</div>
+        <div class="footer-social-row">
+          <a href="https://github.com/jaysid97" target="_blank" rel="noopener" class="footer-social-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener" class="footer-social-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://twitter.com/YOUR_TWITTER" target="_blank" rel="noopener" class="footer-social-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Twitter / X
+          </a>
+          <a href="https://www.g2.com/users/jaysidflashco?tab=profile_details#main" target="_blank" rel="noopener" class="footer-social-chip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            G2 Profile
+          </a>
+          <a href="mailto:YOUR_EMAIL@example.com" class="footer-social-chip">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Email Director
+          </a>
         </div>
       </div>
     </div>
-  </section>
-  <div class="divider"></div>
-  <section id="projects">
-    <div class="reveal">
-      <div class="section-label">// featured_projects</div>
-      <h2 class="section-title">What I've <span>Built</span></h2>
-      <p class="section-desc">A selection of real projects from my GitHub &mdash; each one a different challenge solved.</p>
+
+    <div class="footer-bottom-bar">
+      <div>&copy; 2026 Jayraj S.V &middot; JAYFLIX Streaming Platform</div>
+      <div>Hosted on GitHub Pages &middot; Powered by Pure Vanilla Web Tech</div>
     </div>
-    <div class="projects-grid reveal">
-      <a href="https://github.com/jaysid97/lexipulse-ai" target="_blank" rel="noopener" class="project-card">
-        <div class="project-header"><span class="project-icon">&#x1F916;</span><span class="project-arrow">&#x2197;</span></div>
-        <div class="project-name">lexipulse-ai</div>
-        <div class="project-desc">AI-powered text &amp; language intelligence platform. Built for real-time NLP processing and smart text analysis.</div>
-        <div class="project-tags"><span class="tag">JavaScript</span><span class="tag">AI/NLP</span><span class="tag">GitHub Pages</span></div>
-      </a>
-      <a href="https://github.com/jaysid97/Ten-day-of-voice-challenges-bharat-edition" target="_blank" rel="noopener" class="project-card">
-        <div class="project-header"><span class="project-icon">&#x1F399;&#xFE0F;</span><span class="project-arrow">&#x2197;</span></div>
-        <div class="project-name">Voice Challenges: Bharat Edition &#x1F1EE;&#x1F1F3;</div>
-        <div class="project-desc">10-day voice challenge series designed for Indian developers to explore voice-first application development.</div>
-        <div class="project-tags"><span class="tag">TypeScript</span><span class="tag">Voice SDK</span><span class="tag">10-day challenge</span></div>
-      </a>
-      <a href="https://github.com/jaysid97/carbon-footprint-tracker" target="_blank" rel="noopener" class="project-card">
-        <div class="project-header"><span class="project-icon">&#x1F331;</span><span class="project-arrow">&#x2197;</span></div>
-        <div class="project-name">Carbon Footprint Tracker</div>
-        <div class="project-desc">A green-tech web app to track &amp; reduce personal carbon footprints. Making sustainability data-driven and accessible.</div>
-        <div class="project-tags"><span class="tag">JavaScript</span><span class="tag">Green Tech</span><span class="tag">GitHub Pages</span></div>
-      </a>
-      <a href="https://github.com/jaysid97/entropy-zero" target="_blank" rel="noopener" class="project-card">
-        <div class="project-header"><span class="project-icon">&#x1F52E;</span><span class="project-arrow">&#x2197;</span></div>
-        <div class="project-name">entropy-zero</div>
-        <div class="project-desc">Zero-entropy data management system &mdash; a clean-slate approach to organizing and processing structured data.</div>
-        <div class="project-tags"><span class="tag">JavaScript</span><span class="tag">Data Management</span></div>
-      </a>
-      <a href="https://github.com/jaysid97/civic-nexus" target="_blank" rel="noopener" class="project-card">
-        <div class="project-header"><span class="project-icon">&#x1F3DB;&#xFE0F;</span><span class="project-arrow">&#x2197;</span></div>
-        <div class="project-name">civic-nexus</div>
-        <div class="project-desc">A civic engagement &amp; community platform built to connect citizens with local governance and community actions.</div>
-        <div class="project-tags"><span class="tag">Python</span><span class="tag">Civic Tech</span></div>
-      </a>
-      <a href="https://github.com/jaysid97/stadium-concierge-assistant" target="_blank" rel="noopener" class="project-card">
-        <div class="project-header"><span class="project-icon">&#x1F3DF;&#xFE0F;</span><span class="project-arrow">&#x2197;</span></div>
-        <div class="project-name">Stadium Concierge Assistant</div>
-        <div class="project-desc">AI-powered concierge for stadium experiences &mdash; helping fans navigate events, find services, and get instant answers.</div>
-        <div class="project-tags"><span class="tag">Python</span><span class="tag">AI Assistant</span></div>
-      </a>
-    </div>
-    <div style="text-align:center;margin-top:2.5rem;" class="reveal">
-      <a href="https://github.com/jaysid97?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">View all repositories &rarr;</a>
-    </div>
-  </section>
-  <div class="divider"></div>
-  <section id="contact">
-    <div class="contact-wrapper reveal">
-      <div class="section-label" style="display:inline-block">// lets_connect</div>
-      <div class="contact-title">Get In Touch &#x1F44B;</div>
-      <p class="contact-sub">
-        I'm always open to interesting conversations, collaborations, and new opportunities.<br/>
-        Feel free to reach out &mdash; I'd love to hear from you!
-      </p>
-      <div class="social-links">
-        <a href="https://github.com/jaysid97" target="_blank" rel="noopener" class="social-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-          GitHub
-        </a>
-        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener" class="social-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          LinkedIn
-        </a>
-        <a href="https://twitter.com/YOUR_TWITTER" target="_blank" rel="noopener" class="social-btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          Twitter / X
-        </a>
-        <a href="mailto:YOUR_EMAIL@example.com" class="social-btn">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          Email Me
-        </a>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <p>Designed &amp; built by <span>Jayraj S.V</span> &middot; <span>jaysid97</span> &middot; 2026</p>
-    <p style="margin-top:0.4rem;font-size:0.75rem;opacity:0.5;">Made with &#x2764;&#xFE0F; &amp; lots of &#x2615; &middot; Hosted on GitHub Pages</p>
   </footer>
-  <script>
-    const phrases = [
-      'Software Developer \uD83D\uDCBB',
-      'AI / ML Enthusiast \uD83E\uDD16',
-      'Voice Tech Builder \uD83C\uDF99\uFE0F',
-      'Green Tech Advocate \uD83C\uDF31',
-      'Open Source Contributor \uD83C\uDF0D'
-    ];
-    let pIdx = 0, cIdx = 0, deleting = false;
-    const el = document.getElementById('typed-text');
-    function type() {
-      const phrase = phrases[pIdx];
-      if (!deleting) {
-        el.textContent = phrase.substring(0, cIdx + 1);
-        cIdx++;
-        if (cIdx === phrase.length) { deleting = true; setTimeout(type, 1800); return; }
-        setTimeout(type, 70);
-      } else {
-        el.textContent = phrase.substring(0, cIdx - 1);
-        cIdx--;
-        if (cIdx === 0) { deleting = false; pIdx = (pIdx + 1) % phrases.length; setTimeout(type, 300); return; }
-        setTimeout(type, 40);
-      }
-    }
-    type();
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) { setTimeout(() => e.target.classList.add('visible'), i * 80); observer.unobserve(e.target); }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(r => observer.observe(r));
-    window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
-      nav.style.background = window.scrollY > 50 ? 'rgba(6,9,19,0.95)' : 'rgba(6,9,19,0.8)';
-    });
-  </script>
+
+  <!-- Floating Toast Notification -->
+  <div class="cinema-toast" id="cinema-toast" role="alert" aria-live="polite">
+    <svg width="18" height="18" fill="var(--accent-cyan)" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+    <span class="toast-msg">Added to My List</span>
+  </div>
+
+  <!-- Application Engine Script -->
+  <script src="./app.js"></script>
 </body>
 </html>
