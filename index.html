@@ -3,277 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JAYFLIX &ndash; Jayraj S.V | Cinematic Software &amp; AI Streaming Platform</title>
-  <meta name="description" content="Stream the next generation of software, AI platforms, voice technologies, and green-tech applications built by Jayraj S.V (jaysid97)." />
-  <meta name="keywords" content="Jayraj S.V, jaysid97, software developer, portfolio, AI developer, voice technology, green tech, cinematic portfolio, netflix style" />
+  <title>BORN // FUTURE &mdash; Jayraj S.V | Spatial 3D Experience</title>
+  <meta name="description" content="We transcend dimensions. Built for the future by Jayraj S.V (jaysid97) — Software Developer, AI architect, and systems engineer." />
+  <meta name="keywords" content="Jayraj S.V, jaysid97, Born Future, 3D web experience, Three.js, software developer, portfolio, AI developer" />
   <meta name="author" content="Jayraj S.V" />
 
-  <!-- Open Graph / Social Sharing -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jaysid97.github.io/" />
-  <meta property="og:title" content="JAYFLIX &ndash; Jayraj S.V | Cinematic Software &amp; AI Streaming Platform" />
-  <meta property="og:description" content="Stream next-gen AI tools, voice applications, and eco-tech platforms built with clean, high-performance code." />
+  <meta property="og:title" content="BORN // FUTURE &mdash; Jayraj S.V" />
+  <meta property="og:description" content="We transcend dimensions. Built for the future by Jayraj S.V (jaysid97)." />
   <meta property="og:image" content="./assets/posters/lexipulse.jpg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="JAYFLIX &ndash; Jayraj S.V | Cinematic Software &amp; AI Streaming Platform" />
-  <meta name="twitter:description" content="Stream next-gen AI tools, voice applications, and eco-tech platforms built with clean, high-performance code." />
+  <meta name="twitter:title" content="BORN // FUTURE &mdash; Jayraj S.V" />
+  <meta name="twitter:description" content="We transcend dimensions. Built for the future by Jayraj S.V." />
   <meta name="twitter:image" content="./assets/posters/lexipulse.jpg" />
 
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Fira+Code:wght@400;500;600&family=Italiana&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-  <!-- Stylesheet -->
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
 
-  <!-- Ambient Cinematic Lighting Mesh -->
-  <div class="ambient-glow-mesh" aria-hidden="true">
-    <div class="ambient-circle ambient-1"></div>
-    <div class="ambient-circle ambient-2"></div>
-    <div class="ambient-circle ambient-3"></div>
-  </div>
+  <!-- Custom Kinetic Magnetic Cursor -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
 
-  <!-- Top Navigation Bar -->
-  <header class="cinema-navbar" id="cinema-navbar">
-    <div class="nav-left">
-      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="JAYFLIX Home">
-        <div class="logo-icon">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
-        </div>
-        <span class="logo-text">JAY<span>FLIX</span></span>
+  <!-- Fullscreen Interactive 3D WebGL Canvas Container -->
+  <div id="webgl-canvas-container" title="Click & Drag to Rotate 3D Core • Double-click to Pulse"></div>
+  <div class="vignette-overlay" aria-hidden="true"></div>
+  <div class="ambient-aurora" aria-hidden="true"></div>
+
+  <!-- Editorial Top Header -->
+  <header class="editorial-header" id="editorial-header">
+    <div class="telemetry-left">
+      <a href="#hero" class="brand-monogram" aria-label="Home">
+        <span class="monogram-badge">JS</span>
+        <span>JAYSID</span>
       </a>
-
-      <nav aria-label="Main Navigation">
-        <ul class="nav-links-list">
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#trending">Blockbusters</a></li>
-          <li><a href="#ai-series">AI Series</a></li>
-          <li><a href="#green-civic">Impact &amp; Civic</a></li>
-          <li><a href="#director">Director's Bio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <span style="opacity:0.3;">/</span>
+      <span class="status-dot-pulse"></span>
+      <span>SYS_ONLINE</span>
     </div>
 
-    <div class="nav-right">
-      <!-- Live Search -->
-      <div class="search-wrapper">
-        <span class="search-icon-btn" aria-hidden="true">
-          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-        </span>
-        <input type="text" id="search-input" class="search-input" placeholder="Search titles, tech..." aria-label="Search titles or technologies" />
-      </div>
+    <nav aria-label="Chapter Navigation">
+      <ul class="nav-chapters">
+        <li><a href="#chapters-container">01 // NEURAL</a></li>
+        <li><a href="#chapters-container">02 // ACOUSTIC</a></li>
+        <li><a href="#chapters-container">03 // ECO</a></li>
+        <li><a href="#architect">04 // ARCHITECT</a></li>
+      </ul>
+    </nav>
 
-      <!-- Ambient Audio Toggle -->
-      <button class="audio-toggle-btn" id="audio-toggle-btn" aria-label="Toggle Ambient Audio Synth">
-        <div class="sound-waves" aria-hidden="true">
+    <div class="telemetry-right">
+      <button class="sound-toggle-btn" id="sound-toggle-btn" aria-label="Toggle Binaural Audio">
+        <div class="eq-bars" aria-hidden="true">
           <span></span><span></span><span></span>
         </div>
-        <span class="audio-label">Audio Off</span>
+        <span class="sound-state-label">SOUND // OFF</span>
       </button>
 
-      <!-- Profile Avatar -->
-      <a href="#director" class="user-profile-badge" title="Director Profile">
-        <div class="avatar-img">JS</div>
-        <span class="avatar-name">Jayraj S.V</span>
-      </a>
+      <button class="btn-theater-quick" id="btn-theater-quick" aria-label="Open Theater Showcase">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        THEATER
+      </button>
     </div>
   </header>
 
-  <!-- Hero Streaming Banner -->
+  <!-- Hero Editorial Section: BORN // FUTURE -->
   <main>
-    <section class="hero-banner" id="hero" aria-label="Featured Showreel">
-      <div class="hero-media-container">
-        <canvas id="hero-canvas" class="hero-canvas-backdrop" width="1280" height="720"></canvas>
-        <img id="hero-poster-img" class="hero-image-backdrop" src="./assets/posters/lexipulse.jpg" alt="Featured Production Backdrop" />
-        <div class="hero-gradient-overlay"></div>
-      </div>
-
-      <div class="hero-content">
-        <div class="hero-badges-row">
-          <span class="badge-top10">
-            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            TOP 10 IN SOFTWARE TODAY #1
-          </span>
-          <span class="badge-quality">4K ULTRA HD</span>
-          <span class="badge-quality">HDR10+</span>
-          <span class="badge-match" id="hero-match-badge">99% Match</span>
-          <span class="badge-year">2026 Production</span>
-          <span class="badge-category" id="hero-category-badge">AI / NLP PLATFORM</span>
+    <section class="hero-editorial" id="hero" aria-label="Hero Section">
+      <div class="hero-top-meta">
+        <div class="meta-box">
+          <span>SYS_VER // 2026.4</span>
+          <strong>QUANTUM RUNTIME</strong>
         </div>
-
-        <h1 class="hero-title" id="hero-title">LexiPulse AI</h1>
-        <div class="hero-tagline" id="hero-tagline">The Future. Reimagined.</div>
-        <p class="hero-synopsis" id="hero-synopsis">
-          Next-generation AI-powered language intelligence platform. Engineered for ultra-fast, real-time natural language processing, semantic understanding, sentiment analysis, and intelligent automated summarization across multi-lingual corpora.
-        </p>
-
-        <div class="hero-tech-tags" id="hero-tags">
-          <span class="tech-pill">JavaScript</span>
-          <span class="tech-pill">AI/NLP</span>
-          <span class="tech-pill">Transformers</span>
-          <span class="tech-pill">GitHub Pages</span>
-        </div>
-
-        <div class="hero-cta-group">
-          <button class="btn-cinema btn-play" id="hero-play-btn" aria-label="Watch Showreel Trailer">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-            Watch Trailer
-          </button>
-          <button class="btn-cinema btn-info" id="hero-info-btn" aria-label="More Information & Architecture">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-            More Info
-          </button>
-          <button class="btn-watchlist-add" id="hero-watchlist-btn" title="Add to My List" aria-label="Add to Watchlist">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
-          </button>
+        <div class="meta-box" style="text-align:right;">
+          <span>COORDINATES</span>
+          <strong>28.6139° N, 77.2090° E</strong>
         </div>
       </div>
 
-      <!-- Quick Carousel Thumb Selectors -->
-      <div class="hero-selectors" id="hero-selectors" aria-label="Featured Titles Carousel">
-        <!-- Dynamically rendered -->
+      <!-- Giant Split Headline -->
+      <div class="hero-giant-split" aria-hidden="true">
+        <h1 class="split-word split-word-left" id="split-word-left">BORN</h1>
+        <h1 class="split-word split-word-right" id="split-word-right">FUTURE</h1>
+      </div>
+
+      <div class="hero-center-hint" aria-hidden="true">
+        &bull; DRAG 3D CORE TO ROTATE &bull;
+      </div>
+
+      <!-- Hero Bottom Row with Animated Scroll Mouse -->
+      <div class="hero-bottom-row">
+        <div class="hero-dimension-tag">
+          WE TRANSCEND DIMENSIONS
+          <span>CODE AS LIVING SCULPTURE</span>
+        </div>
+
+        <!-- The Signature Scroll Down Animated Mouse -->
+        <a href="#chapters-container" class="scroll-indicator-wrap" id="scroll-down-action" aria-label="Scroll Down to Explore">
+          <div class="scroll-mouse">
+            <div class="scroll-wheel-dot"></div>
+          </div>
+          <span class="scroll-label">SCROLL DOWN</span>
+        </a>
+
+        <div class="hero-sub-future">
+          BUILT FOR THE FUTURE
+          <strong>JAYRAJ S.V &middot; ARCHITECT</strong>
+        </div>
       </div>
     </section>
 
-    <!-- Streaming Rows & Movie Shelves -->
-    <div class="streaming-section">
-
-      <!-- Dynamic Watchlist Row (Shown if items exist) -->
-      <section class="shelf-container" id="shelf-watchlist-wrap" style="display:none;" aria-label="My Watchlist">
-        <div class="shelf-header">
-          <div class="shelf-title-wrap">
-            <h2 class="shelf-title">⭐ My List</h2>
-            <span class="shelf-subtitle">Saved by you</span>
+    <!-- Chapter Section: The Dimensional Showcase -->
+    <div id="chapters-container">
+      <section class="dimension-section" aria-label="Dimensional Projects Showcase">
+        <div class="section-chapter-header">
+          <div>
+            <div class="chapter-number">DIMENSION MANIFESTO</div>
+            <h2 class="chapter-title">Selected Works</h2>
+          </div>
+          <div class="chapter-tagline">
+            AUTONOMOUS AI &middot; VOICE &middot; SYSTEMS ARCHITECTURE
           </div>
         </div>
-        <div class="shelf-viewport">
-          <button class="shelf-scroll-btn shelf-scroll-left" data-target="shelf-watchlist-slider" aria-label="Scroll Left">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <div class="shelf-slider" id="shelf-watchlist-slider"></div>
-          <button class="shelf-scroll-btn shelf-scroll-right" data-target="shelf-watchlist-slider" aria-label="Scroll Right">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
+
+        <!-- Avant-Garde Editorial Project Cards Grid -->
+        <div class="editorial-cards-grid" id="editorial-cards-grid">
+          <!-- Dynamically populated by app.js -->
         </div>
       </section>
-
-      <!-- Row 1: Trending Blockbusters -->
-      <section class="shelf-container" id="trending" aria-label="Trending Blockbusters">
-        <div class="shelf-header">
-          <div class="shelf-title-wrap">
-            <h2 class="shelf-title">🔥 Trending Blockbusters</h2>
-            <span class="shelf-subtitle">Top rated open-source engineering</span>
-          </div>
-          <a href="https://github.com/jaysid97?tab=repositories" target="_blank" rel="noopener" class="shelf-explore-all">
-            Explore All on GitHub &rarr;
-          </a>
-        </div>
-        <div class="shelf-viewport">
-          <button class="shelf-scroll-btn shelf-scroll-left" data-target="shelf-trending-slider" aria-label="Scroll Left">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <div class="shelf-slider" id="shelf-trending-slider">
-            <!-- Dynamically populated -->
-          </div>
-          <button class="shelf-scroll-btn shelf-scroll-right" data-target="shelf-trending-slider" aria-label="Scroll Right">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-        </div>
-      </section>
-
-      <!-- Row 2: AI & High-Performance Systems -->
-      <section class="shelf-container" id="ai-series" aria-label="AI and High Performance Systems">
-        <div class="shelf-header">
-          <div class="shelf-title-wrap">
-            <h2 class="shelf-title">⚡ High-Performance &amp; Neural AI Series</h2>
-            <span class="shelf-subtitle">Autonomous agents &amp; zero-entropy architecture</span>
-          </div>
-        </div>
-        <div class="shelf-viewport">
-          <button class="shelf-scroll-btn shelf-scroll-left" data-target="shelf-ai-slider" aria-label="Scroll Left">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <div class="shelf-slider" id="shelf-ai-slider">
-            <!-- Dynamically populated -->
-          </div>
-          <button class="shelf-scroll-btn shelf-scroll-right" data-target="shelf-ai-slider" aria-label="Scroll Right">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-        </div>
-      </section>
-
-      <!-- Row 3: Green Tech & Civic Impact -->
-      <section class="shelf-container" id="green-civic" aria-label="Green Tech and Civic Originals">
-        <div class="shelf-header">
-          <div class="shelf-title-wrap">
-            <h2 class="shelf-title">🌿 Green Tech &amp; Real-World Impact Originals</h2>
-            <span class="shelf-subtitle">Eco analytics, voice challenges &amp; civic tech</span>
-          </div>
-        </div>
-        <div class="shelf-viewport">
-          <button class="shelf-scroll-btn shelf-scroll-left" data-target="shelf-impact-slider" aria-label="Scroll Left">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <div class="shelf-slider" id="shelf-impact-slider">
-            <!-- Dynamically populated -->
-          </div>
-          <button class="shelf-scroll-btn shelf-scroll-right" data-target="shelf-impact-slider" aria-label="Scroll Right">
-            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-        </div>
-      </section>
-
     </div>
 
-    <!-- Director Spotlight & Production Gear (About Me & Skills) -->
-    <section class="spotlight-section" id="director" aria-label="Director Spotlight">
-      <div class="spotlight-card">
+    <!-- The Architect Dossier (About Me & Skills) -->
+    <section class="dimension-section" id="architect" aria-label="Architect Dossier">
+      <div class="dossier-wrap">
         <div>
-          <div class="director-header-label">
-            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
-            DIRECTOR &amp; LEAD ARCHITECT
-          </div>
-          <h2 class="director-name">Jayraj S.V</h2>
-          <div class="director-role">Software Developer &middot; AI Builder &middot; Open Source Contributor</div>
-          <p class="director-bio">
-            Passionate software developer directing products at the intersection of <strong>AI, voice technology, and sustainability</strong>.
-            From crafting real-time neural language pipelines to building zero-entropy distributed systems, I turn complex ideas into robust, production-grade applications that make an impact.
+          <div class="chapter-number" style="margin-bottom:1rem;">THE ARCHITECT // 04</div>
+          <h2 class="architect-name">Jayraj S.V</h2>
+          <div class="architect-title">Software Developer &middot; AI Architect &middot; Open Source</div>
+          <p class="architect-bio-text">
+            Operating at the threshold of <strong>AI intelligence, conversational voice agents, and high-velocity systems</strong>.
+            I craft software not merely as utilities, but as resilient, living digital architectures built to transcend standard limitations.
           </p>
 
-          <div class="director-stats-grid">
-            <div class="director-stat-box">
-              <div class="stat-val">6<span>+</span></div>
-              <div class="stat-lbl">Public Productions</div>
+          <div class="architect-stats-row">
+            <div>
+              <div class="stat-metric">6+</div>
+              <div class="stat-desc">Public Works</div>
             </div>
-            <div class="director-stat-box">
-              <div class="stat-val">8<span>+</span></div>
-              <div class="stat-lbl">Core Languages</div>
+            <div>
+              <div class="stat-metric">8+</div>
+              <div class="stat-desc">Core Languages</div>
             </div>
-            <div class="director-stat-box">
-              <div class="stat-val">99<span>%</span></div>
-              <div class="stat-lbl">Clean Code Score</div>
-            </div>
-            <div class="director-stat-box">
-              <div class="stat-val">100<span>%</span></div>
-              <div class="stat-lbl">Production Ready</div>
+            <div>
+              <div class="stat-metric">99%</div>
+              <div class="stat-desc">Clean Code</div>
             </div>
           </div>
         </div>
 
-        <!-- Tech Stack Gear -->
-        <div class="skills-shelf-wrap">
-          <div class="skill-category-title">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            STUDIO PRODUCTION GEAR &amp; TECH STACK
+        <div>
+          <div class="tech-constellation-title">Studio Production Constellation</div>
+          <div class="constellation-chips-list">
+            <span class="constellation-item"><span>🐍</span> Python (AI &amp; Backend Core)</span>
+            <span class="constellation-item"><span>⚡</span> TypeScript &amp; JavaScript</span>
+            <span class="constellation-item"><span>🚀</span> Go (Concurrent Microservices)</span>
+            <span class="constellation-item"><span>⚛️</span> React &amp; Modern UI</span>
+            <span class="constellation-item"><span>⚡</span> FastAPI &amp; Node.js</span>
+            <span class="constellation-item"><span>🐳</span> Docker &amp; Cloud (AWS)</span>
+            <span class="constellation-item"><span>🗄️</span> PostgreSQL &amp; Redis</span>
+            <span class="constellation-item"><span>🌱</span> Green Tech Protocols</span>
           </div>
-          <div class="skills-pill-group" id="tech-crew-grid">
-            <!-- Dynamically populated -->
+
+          <div class="tech-constellation-title">Connect with Architect</div>
+          <div class="portal-links-row">
+            <a href="https://github.com/jaysid97" target="_blank" rel="noopener" class="portal-link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener" class="portal-link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://twitter.com/YOUR_TWITTER" target="_blank" rel="noopener" class="portal-link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Twitter / X
+            </a>
+            <a href="https://www.g2.com/users/jaysidflashco?tab=profile_details#main" target="_blank" rel="noopener" class="portal-link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+              G2 Profile
+            </a>
+            <a href="mailto:YOUR_EMAIL@example.com" class="portal-link-btn">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Direct Dispatch
+            </a>
           </div>
         </div>
       </div>
@@ -289,15 +220,12 @@
 
       <!-- Video Theater Screen -->
       <div class="modal-theater-screen" id="modal-theater-screen">
-        <div class="theater-ambient-glow" id="theater-ambient-glow"></div>
         <canvas id="modal-theater-canvas" class="modal-theater-canvas" width="1280" height="720"></canvas>
 
         <!-- Player HUD Controls -->
         <div class="player-controls-hud">
           <div class="progress-track-wrapper" id="progress-track-wrapper">
-            <div class="progress-buffer-bar" style="width:75%;"></div>
             <div class="progress-fill-bar" id="progress-fill-bar"></div>
-            <div class="progress-handle" id="progress-handle"></div>
           </div>
 
           <div class="player-buttons-row">
@@ -305,22 +233,11 @@
               <button class="control-btn" id="player-play-btn" title="Play / Pause (Space)" aria-label="Play or Pause">
                 <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
               </button>
-              <button class="control-btn" id="player-skip-back" title="Rewind 10s" aria-label="Rewind 10 seconds">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"/></svg>
-              </button>
-              <button class="control-btn" id="player-skip-fwd" title="Forward 10s" aria-label="Forward 10 seconds">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M10 4v3.38A9.955 9.955 0 0 1 12 7c4.65 0 8.58 3.03 9.97 7.22l-2.37.78C18.55 11.81 15.54 9.5 12 9.5c-1.96 0-3.73.72-5.12 1.88L10.5 15H1.5V6l3.6 3.6C6.95 7.99 9.35 7 12 7c.69 0 1.36.08 2 .22V4l-4 0z"/></svg>
-              </button>
               <span class="time-display" id="time-display">00:00 / 03:00</span>
             </div>
 
             <div class="controls-right">
-              <button class="control-btn" id="player-volume-btn" title="Volume" aria-label="Volume">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
-              </button>
-              <button class="control-btn" id="player-fullscreen-btn" title="Fullscreen" aria-label="Fullscreen">
-                <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
-              </button>
+              <span style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent-cyan);">4K 60FPS // SPATIAL</span>
             </div>
           </div>
         </div>
@@ -328,106 +245,43 @@
 
       <!-- Modal Info Details & Feature Episodes -->
       <div class="modal-info-body">
-        <div class="modal-title-bar">
-          <div>
-            <h3 class="modal-project-title" id="modal-project-title">LexiPulse AI</h3>
-            <div class="modal-meta-pills" id="modal-meta-pills">
-              <!-- Dynamically populated -->
-            </div>
-          </div>
-          <div class="modal-actions-group">
-            <a href="#" target="_blank" rel="noopener" class="btn-launch-live" id="modal-launch-live">
-              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-              Launch Live App
-            </a>
-            <a href="#" target="_blank" rel="noopener" class="btn-github-code" id="modal-github">
-              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-              View Source
-            </a>
-          </div>
-        </div>
-
+        <h3 class="modal-project-title" id="modal-project-title">LexiPulse AI</h3>
+        <div class="modal-meta-pills" id="modal-meta-pills"></div>
         <p class="modal-synopsis-text" id="modal-synopsis-text"></p>
 
-        <!-- Episodes & Deep Dive Chapters -->
+        <div style="display:flex;gap:1rem;margin-bottom:2.5rem;flex-wrap:wrap;">
+          <a href="#" target="_blank" rel="noopener" class="btn-theater-quick" id="modal-launch-live">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Launch Production
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="portal-link-btn" id="modal-github">
+            <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            View Source Code
+          </a>
+        </div>
+
         <div class="episodes-section">
-          <div class="episodes-heading">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></svg>
-            Production Episodes &amp; Architecture Chapters
-          </div>
-          <div class="episodes-list" id="episodes-list">
-            <!-- Dynamically populated -->
-          </div>
+          <div class="episodes-heading">System Chapters &middot; Architecture Breakdown</div>
+          <div class="episodes-list" id="episodes-list"></div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Studio Headquarters & Footer -->
-  <footer class="cinema-footer" id="contact">
-    <div class="footer-inner">
-      <div>
-        <div class="brand-logo" style="margin-bottom:1rem;">
-          <div class="logo-icon">
-            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/></svg>
-          </div>
-          <span class="logo-text">JAY<span>FLIX</span></span>
-        </div>
-        <p class="footer-brand-desc">
-          Streaming next-generation software architecture, high-velocity AI platforms, voice technologies, and green-tech applications. Built by Jayraj S.V.
-        </p>
-      </div>
-
-      <div>
-        <div class="footer-links-title">Production Categories</div>
-        <ul class="footer-links-list">
-          <li><a href="#trending">Trending Blockbusters</a></li>
-          <li><a href="#ai-series">AI &amp; Neural Systems</a></li>
-          <li><a href="#green-civic">Green Tech &amp; Eco Analytics</a></li>
-          <li><a href="#director">Director's Studio &amp; Tech Stack</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="footer-links-title">Connect with Director</div>
-        <div class="footer-social-row">
-          <a href="https://github.com/jaysid97" target="_blank" rel="noopener" class="footer-social-chip">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-            GitHub
-          </a>
-          <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener" class="footer-social-chip">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://twitter.com/YOUR_TWITTER" target="_blank" rel="noopener" class="footer-social-chip">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-            Twitter / X
-          </a>
-          <a href="https://www.g2.com/users/jaysidflashco?tab=profile_details#main" target="_blank" rel="noopener" class="footer-social-chip">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-            G2 Profile
-          </a>
-          <a href="mailto:YOUR_EMAIL@example.com" class="footer-social-chip">
-            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-            Email Director
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom-bar">
-      <div>&copy; 2026 Jayraj S.V &middot; JAYFLIX Streaming Platform</div>
-      <div>Hosted on GitHub Pages &middot; Powered by Pure Vanilla Web Tech</div>
-    </div>
+  <!-- Editorial Footer -->
+  <footer class="editorial-footer">
+    <div>&copy; 2026 <strong>JAYRAJ S.V</strong> &middot; BORN // FUTURE</div>
+    <div>SPATIAL 3D WEB PROTOCOL &middot; ZERO DEPENDENCIES</div>
+    <div>HOSTED ON GITHUB PAGES</div>
   </footer>
 
   <!-- Floating Toast Notification -->
-  <div class="cinema-toast" id="cinema-toast" role="alert" aria-live="polite">
-    <svg width="18" height="18" fill="var(--accent-cyan)" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-    <span class="toast-msg">Added to My List</span>
-  </div>
+  <div class="cinema-toast" id="cinema-toast" role="alert" aria-live="polite">Quantum Sync Active</div>
 
-  <!-- Application Engine Script -->
+  <!-- Locally Hosted Three.js (0ms external latency) -->
+  <script src="./assets/js/three.min.js"></script>
+
+  <!-- Application Engine -->
   <script src="./app.js"></script>
 </body>
 </html>

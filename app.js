@@ -1,28 +1,24 @@
 /**
- * JAYFLIX / JAYSID CINEMA - Core Streaming Engine & Interactive Video Controller
+ * BORN // FUTURE — SPATIAL 3D WEB EXPERIENCE ENGINE
+ * Inspired by Avant-Garde Luxury Editorial Design & Interactive Three.js WebGL
  * Author: Jayraj S.V (jaysid97)
  */
 
-// Production Data Model (Jayraj S.V Developer Projects Catalog)
-const MOVIES_DATABASE = [
+// Project Dimensional Database
+const DIMENSIONS_DATA = [
   {
     id: 'lexipulse-ai',
+    number: '01',
+    chapter: 'CHAPTER I // NEURAL INTELLIGENCE',
     title: 'LexiPulse AI',
-    subtitle: 'The Future. Reimagined.',
-    category: 'AI / NLP Platform',
-    badge: 'ORIGINAL',
-    matchScore: '99% Match',
-    maturity: 'Dev 13+',
-    year: '2026',
-    duration: 'Production Ready',
-    quality: '4K Ultra HD',
+    tagline: 'Real-time Neural NLP & Language Platform',
+    synopsis: 'Next-generation AI-powered language intelligence platform. Engineered for sub-millisecond semantic parsing, sentiment extraction, and automated contextual summarization across multi-lingual corpora.',
     poster: './assets/posters/lexipulse.jpg',
-    synopsis: 'Next-generation AI-powered language intelligence platform. Engineered for ultra-fast, real-time natural language processing, semantic understanding, sentiment analysis, and intelligent automated summarization across multi-lingual corpora.',
-    tags: ['JavaScript', 'AI/NLP', 'Transformers', 'GitHub Pages'],
-    githubUrl: 'https://github.com/jaysid97/lexipulse-ai',
-    liveUrl: 'https://jaysid97.github.io/lexipulse-ai/',
     color: '#00f2fe',
     theme: 'neural',
+    tags: ['JavaScript', 'AI/NLP', 'Transformers', 'GitHub Pages'],
+    liveUrl: 'https://jaysid97.github.io/lexipulse-ai/',
+    githubUrl: 'https://github.com/jaysid97/lexipulse-ai',
     episodes: [
       { num: '01', title: 'Real-time NLP Pipeline', desc: 'Sub-millisecond tokenization and vector embeddings engine.', duration: '14 mins' },
       { num: '02', title: 'Semantic Grammar Analysis', desc: 'Context-aware semantic tree parsing with visual telemetry.', duration: '18 mins' },
@@ -31,22 +27,17 @@ const MOVIES_DATABASE = [
   },
   {
     id: 'voice-bharat',
-    title: 'Voice Challenges: Bharat Edition',
-    subtitle: 'The Sound of the Next Billion',
-    category: 'Voice-First AI',
-    badge: 'TRENDING #1',
-    matchScore: '98% Match',
-    maturity: 'All Devs',
-    year: '2025-2026',
-    duration: '10 Episodes Series',
-    quality: 'Dolby Atmos',
+    number: '02',
+    chapter: 'CHAPTER II // ACOUSTIC REVOLUTION',
+    title: 'Voice Challenges: Bharat',
+    tagline: 'Conversational Voice SDKs for Next Billion',
+    synopsis: 'An intensive 10-day voice challenge series architected for Indian developers. Empowers engineers to build conversational voice agents, dialect-aware interfaces, and multilingual audio speech recognition pipelines.',
     poster: './assets/posters/voice_bharat.jpg',
-    synopsis: 'A groundbreaking 10-day intensive voice challenge series architected for Indian developers. Empowers engineers to build conversational voice agents, dialect-aware interfaces, and multilingual audio speech recognition pipelines.',
-    tags: ['TypeScript', 'Voice SDK', 'Speech-to-Text', 'Acoustic AI'],
-    githubUrl: 'https://github.com/jaysid97/Ten-day-of-voice-challenges-bharat-edition',
-    liveUrl: 'https://github.com/jaysid97/Ten-day-of-voice-challenges-bharat-edition',
     color: '#ff9933',
     theme: 'audio',
+    tags: ['TypeScript', 'Voice SDK', 'Speech-to-Text', 'Acoustic AI'],
+    liveUrl: 'https://github.com/jaysid97/Ten-day-of-voice-challenges-bharat-edition',
+    githubUrl: 'https://github.com/jaysid97/Ten-day-of-voice-challenges-bharat-edition',
     episodes: [
       { num: '01', title: 'Acoustic Model Foundations', desc: 'Capturing regional nuances and multilingual phonetics.', duration: '15 mins' },
       { num: '02', title: 'Low-Latency Conversational Loop', desc: 'Streaming audio chunks over WebSocket with bi-directional audio.', duration: '20 mins' },
@@ -55,22 +46,17 @@ const MOVIES_DATABASE = [
   },
   {
     id: 'carbon-tracker',
+    number: '03',
+    chapter: 'CHAPTER III // PLANETARY TELEMETRY',
     title: 'Carbon Footprint Tracker',
-    subtitle: 'The Green Protocol',
-    category: 'Green Tech & Eco Analytics',
-    badge: 'CRITIC CHOICE',
-    matchScore: '97% Match',
-    maturity: 'Eco 100%',
-    year: '2025-2026',
-    duration: 'Global Edition',
-    quality: 'HDR10+',
+    tagline: 'Data-Driven Eco Sustainability Protocol',
+    synopsis: 'A high-impact sustainability web application designed to compute, visualize, and systematically reduce personal and organizational carbon footprints with real-time planetary telemetry and actionable offsets.',
     poster: './assets/posters/carbon_tracker.jpg',
-    synopsis: 'A high-impact sustainability web application designed to compute, visualize, and systematically reduce personal and organizational carbon footprints. Features interactive telemetry, emission breakdowns, and actionable offsets.',
-    tags: ['JavaScript', 'Green Tech', 'Data Visualizer', 'Eco Metrics'],
-    githubUrl: 'https://github.com/jaysid97/carbon-footprint-tracker',
-    liveUrl: 'https://jaysid97.github.io/carbon-footprint-tracker/',
     color: '#00df89',
     theme: 'eco',
+    tags: ['JavaScript', 'Green Tech', 'Data Visualizer', 'Eco Metrics'],
+    liveUrl: 'https://jaysid97.github.io/carbon-footprint-tracker/',
+    githubUrl: 'https://github.com/jaysid97/carbon-footprint-tracker',
     episodes: [
       { num: '01', title: 'Emission Telemetry Calculation', desc: 'Mathematical modeling of Scope 1, 2, and 3 personal emissions.', duration: '16 mins' },
       { num: '02', title: 'Predictive Reduction Engine', desc: 'Simulating energy habits and lifestyle carbon impact.', duration: '21 mins' },
@@ -79,22 +65,17 @@ const MOVIES_DATABASE = [
   },
   {
     id: 'entropy-zero',
+    number: '04',
+    chapter: 'CHAPTER IV // ZERO ENTROPY ARCHITECTURE',
     title: 'Entropy Zero',
-    subtitle: 'In The Abyss of The Final State',
-    category: 'Systems Architecture',
-    badge: 'BLOCKBUSTER',
-    matchScore: '96% Match',
-    maturity: 'Dev 18+',
-    year: '2025',
-    duration: 'High Throughput',
-    quality: 'IMAX 70MM',
-    poster: './assets/posters/entropy_zero.jpg',
+    tagline: 'Deterministic High-Velocity State Systems',
     synopsis: 'Zero-entropy structured data management system — a clean-slate philosophical approach to orchestrating, validating, and mutating high-velocity state streams with deterministic mathematical guarantees.',
-    tags: ['JavaScript', 'System Architecture', 'State Engine'],
-    githubUrl: 'https://github.com/jaysid97/entropy-zero',
-    liveUrl: 'https://github.com/jaysid97/entropy-zero',
-    color: '#00f2fe',
+    poster: './assets/posters/entropy_zero.jpg',
+    color: '#9d4edd',
     theme: 'matrix',
+    tags: ['JavaScript', 'System Architecture', 'State Engine'],
+    liveUrl: 'https://github.com/jaysid97/entropy-zero',
+    githubUrl: 'https://github.com/jaysid97/entropy-zero',
     episodes: [
       { num: '01', title: 'Deterministic State Trees', desc: 'Eliminating non-deterministic race conditions at scale.', duration: '24 mins' },
       { num: '02', title: 'Zero Mutation Overhead', desc: 'Memory-efficient structural sharing data structures.', duration: '28 mins' },
@@ -103,534 +84,475 @@ const MOVIES_DATABASE = [
   },
   {
     id: 'stadium-concierge',
+    number: '05',
+    chapter: 'CHAPTER V // ARENA CONCIERGE AI',
     title: 'Stadium Concierge Assistant',
-    subtitle: 'Your Guide to The Game',
-    category: 'Autonomous AI Concierge',
-    badge: 'NEW RELEASE',
-    matchScore: '99% Match',
-    maturity: 'All Arenas',
-    year: '2026',
-    duration: 'Real-time Event AI',
-    quality: '4K Ultra HD',
+    tagline: 'Autonomous AI Navigation for Major Arenas',
+    synopsis: 'An intelligent AI concierge assistant for major arena and sports experiences. Directs fans through gates, delivers real-time venue navigation, concession orders, and handles thousands of fan inquiries.',
     poster: './assets/posters/stadium_concierge.jpg',
-    synopsis: 'An intelligent AI concierge assistant for major arena and sports experiences. Directs fans through gates, delivers real-time venue navigation, concession orders, and handles thousands of fan inquiries with zero friction.',
-    tags: ['Python', 'FastAPI', 'Event AI', 'Conversational Assistant'],
-    githubUrl: 'https://github.com/jaysid97/stadium-concierge-assistant',
-    liveUrl: 'https://github.com/jaysid97/stadium-concierge-assistant',
-    color: '#a78bfa',
+    color: '#00f2fe',
     theme: 'arena',
+    tags: ['Python', 'FastAPI', 'Event AI', 'Conversational Assistant'],
+    liveUrl: 'https://github.com/jaysid97/stadium-concierge-assistant',
+    githubUrl: 'https://github.com/jaysid97/stadium-concierge-assistant',
     episodes: [
       { num: '01', title: 'Spatial Navigation & Map Routing', desc: 'Indoor geospatial guidance for multi-tiered sports stadiums.', duration: '17 mins' },
-      { num: '02', title: 'Concession Surge Load Management', desc: 'Predicting queue wait times and load-balancing orders.', duration: '23 mins' },
-      { num: '03', title: 'Autonomous RAG Query Agent', desc: 'Vector search indexing stadium FAQs, schedules, and live alerts.', duration: '26 mins' }
-    ]
-  },
-  {
-    id: 'civic-nexus',
-    title: 'Civic Nexus',
-    subtitle: 'Connecting People & Governance',
-    category: 'Civic Tech & Public Platform',
-    badge: 'ORIGINAL',
-    matchScore: '95% Match',
-    maturity: 'All Citizens',
-    year: '2025',
-    duration: 'Full Stack',
-    quality: 'HD 1080p',
-    poster: './assets/posters/entropy_zero.jpg',
-    synopsis: 'A community engagement platform engineered to bridge the divide between local citizens and public governance. Facilitates municipal issue tracking, civic petitions, transparent local spending visualizers, and neighborhood forums.',
-    tags: ['Python', 'Django/FastAPI', 'Civic Tech', 'PostgreSQL'],
-    githubUrl: 'https://github.com/jaysid97/civic-nexus',
-    liveUrl: 'https://github.com/jaysid97/civic-nexus',
-    color: '#34d399',
-    theme: 'matrix',
-    episodes: [
-      { num: '01', title: 'Citizen Grievance Routing', desc: 'Automated municipal ticket triage and sentiment categorization.', duration: '15 mins' },
-      { num: '02', title: 'Transparent Public Ledger', desc: 'Displaying municipal project progress and budget allocation.', duration: '20 mins' }
+      { num: '02', title: 'Concession Surge Load Management', desc: 'Predicting queue wait times and load-balancing orders.', duration: '23 mins' }
     ]
   }
 ];
 
-// Tech Stack "Production Crew" Database
-const TECH_CREW = [
-  { name: 'Python', role: 'Lead Backend & Deep Learning', icon: '🐍', tag: 'Core Director' },
-  { name: 'JavaScript & TypeScript', role: 'Full-Stack & Frontend Architecture', icon: '⚡', tag: 'Visual Maestro' },
-  { name: 'Go', role: 'High-Concurrency Microservices', icon: '🚀', tag: 'Speed Demon' },
-  { name: 'FastAPI & Node.js', role: 'RESTful & Event APIs', icon: '🌐', tag: 'Network Lead' },
-  { name: 'React', role: 'Interactive Component Systems', icon: '⚛️', tag: 'UI Virtuoso' },
-  { name: 'Docker & AWS', role: 'Containerization & Cloud Infrastructure', icon: '☁️', tag: 'Studio Rigging' },
-  { name: 'PostgreSQL & Redis', role: 'Distributed State & Persistence', icon: '🗄️', tag: 'Vault Keeper' }
-];
-
-/* ==========================================================================
-   STREAMING STATE & AUDIO SYNTHESIS ENGINE
-   ========================================================================== */
-
-class JayFlixApp {
+class AvantGardeExperience {
   constructor() {
-    this.movies = MOVIES_DATABASE;
-    this.currentHeroIndex = 0;
-    this.heroTimer = null;
-    this.watchlist = JSON.parse(localStorage.getItem('jayflix_watchlist') || '[]');
-    this.likes = JSON.parse(localStorage.getItem('jayflix_likes') || '{}');
-    this.activeModalMovie = null;
+    this.mouse = { x: 0, y: 0, targetX: 0, targetY: 0, isDown: false };
+    this.scroll = { current: 0, target: 0, ease: 0.08 };
+    this.activeDimension = 0;
+    this.activeModal = null;
 
-    // Audio Engine
+    // Web Audio Engine
     this.audioCtx = null;
-    this.ambientGain = null;
-    this.isAudioPlaying = false;
+    this.masterGain = null;
+    this.isAudioActive = false;
+    this.chordNodes = [];
 
-    // Canvas Video Engine
-    this.heroCanvas = document.getElementById('hero-canvas');
-    this.modalCanvas = document.getElementById('modal-theater-canvas');
-    this.heroCtx = this.heroCanvas ? this.heroCanvas.getContext('2d') : null;
-    this.modalCtx = this.modalCanvas ? this.modalCanvas.getContext('2d') : null;
-    this.animFrameId = null;
-    this.canvasFrame = 0;
-
-    // Player state
+    // Theater state
     this.isPlaying = false;
-    this.playbackProgress = 0;
+    this.progress = 0;
     this.playbackTimer = null;
 
     this.init();
   }
 
   init() {
-    this.setupNavbarScroll();
-    this.renderHero(0);
-    this.renderShelves();
-    this.setupEventListeners();
-    this.setupHeroCarousel();
-    this.setupCanvasVisualizer();
-    this.setupSearch();
+    this.initMagneticCursor();
+    this.initThreeScene();
+    this.initScrollEngine();
+    this.initAudioEngine();
+    this.initInteractions();
+    this.renderCards();
+    this.animate();
   }
 
   /* --------------------------------------------------------------------------
-     NAVBAR & SCROLL BEHAVIOR
+     1. THREE.JS 3D WEBGL CENTERPIECE ARTIFACT
   -------------------------------------------------------------------------- */
-  setupNavbarScroll() {
-    const navbar = document.getElementById('cinema-navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
+  initThreeScene() {
+    const container = document.getElementById('webgl-canvas-container');
+    if (!container || typeof THREE === 'undefined') return;
+
+    this.scene = new THREE.Scene();
+    this.camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
+    this.camera.position.z = 7;
+
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    this.renderer.toneMappingExposure = 1.2;
+    container.appendChild(this.renderer.domElement);
+
+    // Create The Iridescent Quantum Artifact Core
+    this.createArtifactCore();
+
+    // Create Quantum Particle Starfield
+    this.createQuantumStarfield();
+
+    // Cinematic Lights
+    this.ambientLight = new THREE.AmbientLight(0x0f111a, 1.5);
+    this.scene.add(this.ambientLight);
+
+    this.pointLightCyan = new THREE.PointLight(0x00f2fe, 3, 20);
+    this.pointLightCyan.position.set(4, 3, 4);
+    this.scene.add(this.pointLightCyan);
+
+    this.pointLightPurple = new THREE.PointLight(0x9d4edd, 3.5, 20);
+    this.pointLightPurple.position.set(-4, -2, 3);
+    this.scene.add(this.pointLightPurple);
+
+    this.pointLightMouse = new THREE.PointLight(0xffffff, 2, 10);
+    this.pointLightMouse.position.set(0, 0, 5);
+    this.scene.add(this.pointLightMouse);
+
+    // Drag tracking on canvas
+    this.dragStart = { x: 0, y: 0 };
+    this.rotationVel = { x: 0, y: 0 };
+
+    container.addEventListener('pointerdown', (e) => {
+      this.mouse.isDown = true;
+      this.dragStart.x = e.clientX;
+      this.dragStart.y = e.clientY;
+    });
+
+    window.addEventListener('pointerup', () => {
+      this.mouse.isDown = false;
+    });
+
+    window.addEventListener('pointermove', (e) => {
+      this.mouse.targetX = (e.clientX / window.innerWidth) * 2 - 1;
+      this.mouse.targetY = -(e.clientY / window.innerHeight) * 2 + 1;
+
+      if (this.mouse.isDown && this.coreGroup) {
+        const dx = e.clientX - this.dragStart.x;
+        const dy = e.clientY - this.dragStart.y;
+        this.coreGroup.rotation.y += dx * 0.005;
+        this.coreGroup.rotation.x += dy * 0.005;
+        this.dragStart.x = e.clientX;
+        this.dragStart.y = e.clientY;
       }
     });
-  }
 
-  /* --------------------------------------------------------------------------
-     HERO BANNER CONTROLLER
-  -------------------------------------------------------------------------- */
-  renderHero(index) {
-    this.currentHeroIndex = index;
-    const movie = this.movies[index];
-    if (!movie) return;
+    // Double click to trigger shockwave
+    container.addEventListener('dblclick', () => {
+      this.triggerCoreShockwave();
+    });
 
-    const heroTitle = document.getElementById('hero-title');
-    const heroTagline = document.getElementById('hero-tagline');
-    const heroSynopsis = document.getElementById('hero-synopsis');
-    const heroTags = document.getElementById('hero-tags');
-    const heroPoster = document.getElementById('hero-poster-img');
-    const heroPlayBtn = document.getElementById('hero-play-btn');
-    const heroInfoBtn = document.getElementById('hero-info-btn');
-    const heroWatchlistBtn = document.getElementById('hero-watchlist-btn');
-
-    heroTitle.textContent = movie.title;
-    heroTagline.textContent = movie.subtitle;
-    heroSynopsis.textContent = movie.synopsis;
-
-    // Update tags
-    heroTags.innerHTML = movie.tags
-      .map(tag => `<span class="tech-pill">${tag}</span>`)
-      .join('');
-
-    // Smooth poster transition
-    if (heroPoster) {
-      heroPoster.style.opacity = '0';
-      setTimeout(() => {
-        heroPoster.src = movie.poster;
-        heroPoster.style.opacity = '1';
-      }, 250);
-    }
-
-    // Set buttons
-    heroPlayBtn.onclick = () => this.openCinemaModal(movie.id);
-    heroInfoBtn.onclick = () => this.openCinemaModal(movie.id);
-
-    // Watchlist state
-    const inWatchlist = this.watchlist.includes(movie.id);
-    heroWatchlistBtn.innerHTML = inWatchlist
-      ? `<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`
-      : `<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>`;
-    heroWatchlistBtn.onclick = () => this.toggleWatchlist(movie.id);
-
-    // Update thumb selectors
-    document.querySelectorAll('.hero-thumb-dot').forEach((dot, idx) => {
-      dot.classList.toggle('active', idx === index);
+    window.addEventListener('resize', () => {
+      this.camera.aspect = window.innerWidth / window.innerHeight;
+      this.camera.updateProjectionMatrix();
+      this.renderer.setSize(window.innerWidth, window.innerHeight);
     });
   }
 
-  setupHeroCarousel() {
-    const selectorsWrap = document.getElementById('hero-selectors');
-    if (!selectorsWrap) return;
+  createArtifactCore() {
+    this.coreGroup = new THREE.Group();
+    this.scene.add(this.coreGroup);
 
-    selectorsWrap.innerHTML = this.movies.slice(0, 4).map((m, idx) => `
-      <div class="hero-thumb-dot ${idx === 0 ? 'active' : ''}" data-index="${idx}">
-        <span>0${idx + 1}</span>
-        <strong>${m.title}</strong>
-      </div>
-    `).join('');
+    // Geometry 1: Metallic Iridescent Inner Core (Torus Knot)
+    const innerGeo = new THREE.TorusKnotGeometry(1.3, 0.42, 160, 32, 2, 3);
+    this.innerMat = new THREE.MeshPhysicalMaterial({
+      color: 0x07090e,
+      emissive: 0x1a0b2e,
+      roughness: 0.12,
+      metalness: 0.92,
+      clearcoat: 1.0,
+      clearcoatRoughness: 0.1,
+      reflectivity: 0.9,
+      transmission: 0.2,
+      ior: 1.6
+    });
+    this.innerMesh = new THREE.Mesh(innerGeo, this.innerMat);
+    this.coreGroup.add(this.innerMesh);
 
-    selectorsWrap.querySelectorAll('.hero-thumb-dot').forEach(dot => {
-      dot.addEventListener('click', (e) => {
-        const idx = parseInt(e.currentTarget.dataset.index, 10);
-        this.renderHero(idx);
-        this.resetHeroTimer();
+    // Geometry 2: Outer Holographic Lattice Cage (Icosahedron Wireframe)
+    const outerGeo = new THREE.IcosahedronGeometry(2.35, 2);
+    const wireMat = new THREE.MeshBasicMaterial({
+      color: 0x00f2fe,
+      wireframe: true,
+      transparent: true,
+      opacity: 0.22
+    });
+    this.outerMesh = new THREE.Mesh(outerGeo, wireMat);
+    this.coreGroup.add(this.outerMesh);
+
+    // Geometry 3: Radiant Floating Gyro Rings
+    const ringGeo = new THREE.TorusGeometry(2.8, 0.02, 16, 120);
+    const ringMat = new THREE.MeshBasicMaterial({
+      color: 0x9d4edd,
+      transparent: true,
+      opacity: 0.35
+    });
+    this.ringMesh1 = new THREE.Mesh(ringGeo, ringMat);
+    this.ringMesh2 = new THREE.Mesh(ringGeo, ringMat);
+    this.ringMesh2.rotation.x = Math.PI / 2;
+    this.coreGroup.add(this.ringMesh1);
+    this.coreGroup.add(this.ringMesh2);
+  }
+
+  createQuantumStarfield() {
+    const particleCount = 1200;
+    const geometry = new THREE.BufferGeometry();
+    const positions = new Float32Array(particleCount * 3);
+    const colors = new Float32Array(particleCount * 3);
+
+    const cyanColor = new THREE.Color(0x00f2fe);
+    const purpleColor = new THREE.Color(0x9d4edd);
+
+    for (let i = 0; i < particleCount * 3; i += 3) {
+      positions[i] = (Math.random() - 0.5) * 35;
+      positions[i + 1] = (Math.random() - 0.5) * 35;
+      positions[i + 2] = (Math.random() - 0.5) * 35;
+
+      const mixed = Math.random() > 0.5 ? cyanColor : purpleColor;
+      colors[i] = mixed.r;
+      colors[i + 1] = mixed.g;
+      colors[i + 2] = mixed.b;
+    }
+
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+    const material = new THREE.PointsMaterial({
+      size: 0.08,
+      vertexColors: true,
+      transparent: true,
+      opacity: 0.7,
+      blending: THREE.AdditiveBlending
+    });
+
+    this.particles = new THREE.Points(geometry, material);
+    this.scene.add(this.particles);
+  }
+
+  triggerCoreShockwave() {
+    if (!this.coreGroup) return;
+    this.playAudioSfx('boom');
+    this.showToast('Quantum Resonance Triggered ⚡');
+
+    const originalScale = this.coreGroup.scale.x;
+    let progress = 0;
+
+    const pulseInterval = setInterval(() => {
+      progress += 0.08;
+      const s = originalScale + Math.sin(progress * Math.PI) * 0.45;
+      this.coreGroup.scale.set(s, s, s);
+
+      if (progress >= 1) {
+        clearInterval(pulseInterval);
+        this.coreGroup.scale.set(originalScale, originalScale, originalScale);
+      }
+    }, 20);
+  }
+
+  /* --------------------------------------------------------------------------
+     2. MAGNETIC CURSOR & KINETIC RING
+  -------------------------------------------------------------------------- */
+  initMagneticCursor() {
+    this.cursorDot = document.getElementById('cursor-dot');
+    this.cursorRing = document.getElementById('cursor-ring');
+    if (!this.cursorDot || !this.cursorRing) return;
+
+    this.cursorPos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    this.ringPos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+
+    window.addEventListener('pointermove', (e) => {
+      this.cursorPos.x = e.clientX;
+      this.cursorPos.y = e.clientY;
+    });
+
+    // Hover magnet on clickable items
+    const updateInteractiveElements = () => {
+      document.querySelectorAll('a, button, .avant-card, .scroll-indicator-wrap, .constellation-item, .split-word').forEach(el => {
+        el.onmouseenter = () => {
+          document.body.classList.add('cursor-hover');
+          this.playAudioSfx('tick');
+        };
+        el.onmouseleave = () => {
+          document.body.classList.remove('cursor-hover');
+        };
       });
-    });
+    };
 
-    this.resetHeroTimer();
-  }
-
-  resetHeroTimer() {
-    if (this.heroTimer) clearInterval(this.heroTimer);
-    this.heroTimer = setInterval(() => {
-      const nextIdx = (this.currentHeroIndex + 1) % Math.min(4, this.movies.length);
-      this.renderHero(nextIdx);
-    }, 9000);
+    updateInteractiveElements();
+    this.updateInteractive = updateInteractiveElements;
   }
 
   /* --------------------------------------------------------------------------
-     SHELVES RENDERING (NETFLIX CATEGORIES)
+     3. SCROLL PROGRESSION & 3D CAMERA MORPHING
   -------------------------------------------------------------------------- */
-  renderShelves() {
-    // 1. Trending Blockbusters
-    const trendingSlider = document.getElementById('shelf-trending-slider');
-    if (trendingSlider) {
-      trendingSlider.innerHTML = this.movies.map(m => this.createMovieCardHTML(m)).join('');
+  initScrollEngine() {
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = Math.max(0, Math.min(1, scrollY / (docHeight || 1)));
+
+      // Navbar scroll glass
+      const header = document.getElementById('editorial-header');
+      if (header) {
+        if (scrollY > 50) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+      }
+
+      // Parallax text split
+      const wordLeft = document.getElementById('split-word-left');
+      const wordRight = document.getElementById('split-word-right');
+      if (wordLeft && wordRight && scrollY < window.innerHeight) {
+        const offset = scrollY * 0.45;
+        wordLeft.style.transform = `translateX(-${offset}px)`;
+        wordRight.style.transform = `translateX(${offset}px)`;
+      }
+
+      // Transform 3D artifact based on scroll progress
+      if (this.coreGroup) {
+        // Shift position: center -> right -> left -> center
+        const phase = progress * Math.PI * 4;
+        this.coreGroup.position.x = Math.sin(phase) * 1.8;
+        this.coreGroup.position.y = -progress * 2 + Math.cos(phase) * 0.6;
+        this.coreGroup.scale.setScalar(1 + Math.sin(progress * Math.PI) * 0.35);
+
+        // Shift color and glow
+        if (progress < 0.25) {
+          this.innerMat.emissive.setHex(0x1a0b2e); // Violet
+          this.pointLightCyan.color.setHex(0x00f2fe);
+        } else if (progress < 0.5) {
+          this.innerMat.emissive.setHex(0x003344); // Cyan
+          this.pointLightCyan.color.setHex(0x00df89); // Emerald
+        } else if (progress < 0.75) {
+          this.innerMat.emissive.setHex(0x2a1500); // Amber
+          this.pointLightCyan.color.setHex(0xff9933);
+        } else {
+          this.innerMat.emissive.setHex(0x1a0033); // Cosmic
+          this.pointLightCyan.color.setHex(0x00f2fe);
+        }
+      }
+
+      // Dynamic Audio Synth Pitch Shift on Scroll
+      if (this.isAudioActive && this.chordNodes.length > 0) {
+        const baseFreq = 65.41 * (1 + progress * 0.4);
+        this.chordNodes[0].frequency.setTargetAtTime(baseFreq, this.audioCtx.currentTime, 0.2);
+      }
+    });
+
+    // Smooth scroll down button click
+    const scrollBtn = document.getElementById('scroll-down-action');
+    if (scrollBtn) {
+      scrollBtn.onclick = (e) => {
+        e.preventDefault();
+        const target = document.getElementById('chapters-container');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+          this.playAudioSfx('whoosh');
+        }
+      };
     }
+  }
 
-    // 2. High Performance & AI Systems
-    const aiSlider = document.getElementById('shelf-ai-slider');
-    if (aiSlider) {
-      const aiMovies = this.movies.filter(m => m.tags.some(t => t.includes('AI') || t.includes('System') || t.includes('Voice')));
-      aiSlider.innerHTML = aiMovies.map(m => this.createMovieCardHTML(m)).join('');
-    }
+  /* --------------------------------------------------------------------------
+     4. RENDER DIMENSION PROJECT CARDS
+  -------------------------------------------------------------------------- */
+  renderCards() {
+    const grid = document.getElementById('editorial-cards-grid');
+    if (!grid) return;
 
-    // 3. Green & Civic Originals
-    const impactSlider = document.getElementById('shelf-impact-slider');
-    if (impactSlider) {
-      const impactMovies = this.movies.filter(m => m.category.includes('Green') || m.category.includes('Civic') || m.category.includes('Autonomous'));
-      impactSlider.innerHTML = impactMovies.map(m => this.createMovieCardHTML(m)).join('');
-    }
-
-    // 4. My List / Watchlist
-    this.renderWatchlistShelf();
-
-    // 5. Tech Stack Cast
-    const techGrid = document.getElementById('tech-crew-grid');
-    if (techGrid) {
-      techGrid.innerHTML = TECH_CREW.map(tech => `
-        <div class="skill-chip">
-          <span style="font-size:1.2rem;">${tech.icon}</span>
-          <div>
-            <div style="font-weight:700;font-size:0.92rem;">${tech.name}</div>
-            <div style="font-size:0.75rem;color:var(--text-muted);">${tech.role}</div>
+    grid.innerHTML = DIMENSIONS_DATA.map((item, idx) => `
+      <article class="avant-card" data-id="${item.id}">
+        <div>
+          <div class="card-top-bar">
+            <span class="card-num-stamp">${item.number} // ${item.theme.toUpperCase()}</span>
+            <span class="card-status-pill">Production Ready</span>
           </div>
-        </div>
-      `).join('');
-    }
-
-    // Bind card events
-    this.bindCardEvents();
-  }
-
-  renderWatchlistShelf() {
-    const watchlistShelf = document.getElementById('shelf-watchlist-wrap');
-    const watchlistSlider = document.getElementById('shelf-watchlist-slider');
-    if (!watchlistShelf || !watchlistSlider) return;
-
-    if (this.watchlist.length === 0) {
-      watchlistShelf.style.display = 'none';
-      return;
-    }
-
-    watchlistShelf.style.display = 'block';
-    const listMovies = this.movies.filter(m => this.watchlist.includes(m.id));
-    watchlistSlider.innerHTML = listMovies.map(m => this.createMovieCardHTML(m)).join('');
-    this.bindCardEvents();
-  }
-
-  createMovieCardHTML(movie) {
-    const isLiked = !!this.likes[movie.id];
-    const inWatchlist = this.watchlist.includes(movie.id);
-
-    return `
-      <div class="movie-card" data-id="${movie.id}">
-        <div class="card-poster-wrapper">
-          <img src="${movie.poster}" alt="${movie.title}" class="card-poster-img" loading="lazy" />
-          <div class="card-badge-top">${movie.badge}</div>
-          <div class="card-match-badge">${movie.matchScore}</div>
-        </div>
-        <div class="card-body">
-          <div class="card-title-row">
-            <h4 class="card-title">${movie.title}</h4>
-            <div class="card-actions-quick">
-              <button class="quick-icon-btn card-play-trigger" title="Play Showreel" data-id="${movie.id}">
-                <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-              </button>
-              <button class="quick-icon-btn card-watchlist-trigger ${inWatchlist ? 'active' : ''}" title="Add to My List" data-id="${movie.id}">
-                ${inWatchlist
-                  ? `<svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>`
-                  : `<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>`
-                }
-              </button>
-              <button class="quick-icon-btn card-like-trigger ${isLiked ? 'active' : ''}" title="Like Production" data-id="${movie.id}">
-                <svg width="14" height="14" fill="${isLiked ? 'var(--accent-red)' : 'none'}" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
-              </button>
+          <div class="card-hero-poster">
+            <img src="${item.poster}" alt="${item.title}" loading="lazy" />
+            <div class="card-play-hover-overlay">
+              <div class="play-circle-glow">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
             </div>
           </div>
-          <p class="card-desc">${movie.synopsis}</p>
-          <div class="card-meta-row">
-            <span style="color:var(--accent-cyan);font-weight:700;">${movie.quality}</span>
-            <span>•</span>
-            <span>${movie.year}</span>
-            <span>•</span>
-            <span>${movie.duration}</span>
+          <h3 class="card-title-main">${item.title}</h3>
+          <div class="card-tagline-sub">${item.tagline}</div>
+          <p class="card-desc-body">${item.synopsis}</p>
+        </div>
+
+        <div>
+          <div class="card-footer-tech">
+            ${item.tags.map(t => `<span class="tech-tag-editorial">${t}</span>`).join('')}
           </div>
-          <div class="card-tags">
-            ${movie.tags.slice(0, 3).map(t => `<span class="card-tag">${t}</span>`).join('')}
+          <div class="card-cta-row">
+            <a href="${item.liveUrl}" target="_blank" rel="noopener" class="btn-card-launch" onclick="event.stopPropagation()">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              Explore Live
+            </a>
+            <a href="${item.githubUrl}" target="_blank" rel="noopener" class="btn-card-code" title="View GitHub Code" onclick="event.stopPropagation()">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </a>
           </div>
         </div>
-      </div>
-    `;
-  }
+      </article>
+    `).join('');
 
-  bindCardEvents() {
-    document.querySelectorAll('.movie-card').forEach(card => {
-      card.onclick = (e) => {
-        // If clicked on quick action buttons, prevent whole card opening
-        if (e.target.closest('.quick-icon-btn')) return;
+    // Bind card clicks to open theater modal
+    grid.querySelectorAll('.avant-card').forEach(card => {
+      card.onclick = () => {
         const id = card.dataset.id;
         this.openCinemaModal(id);
       };
-
-      // Sound feedback on card hover
-      card.onmouseenter = () => {
-        this.playUIAudio('blip');
-      };
     });
 
-    document.querySelectorAll('.card-play-trigger').forEach(btn => {
-      btn.onclick = (e) => {
-        e.stopPropagation();
-        this.openCinemaModal(btn.dataset.id);
-      };
-    });
-
-    document.querySelectorAll('.card-watchlist-trigger').forEach(btn => {
-      btn.onclick = (e) => {
-        e.stopPropagation();
-        this.toggleWatchlist(btn.dataset.id);
-      };
-    });
-
-    document.querySelectorAll('.card-like-trigger').forEach(btn => {
-      btn.onclick = (e) => {
-        e.stopPropagation();
-        this.toggleLike(btn.dataset.id);
-      };
-    });
+    if (this.updateInteractive) this.updateInteractive();
   }
 
   /* --------------------------------------------------------------------------
-     SHELF SCROLL CONTROLS
+     5. CINEMA THEATER MODAL ENGINE
   -------------------------------------------------------------------------- */
-  setupEventListeners() {
-    // Scroll buttons
-    document.querySelectorAll('.shelf-scroll-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const targetId = btn.dataset.target;
-        const slider = document.getElementById(targetId);
-        if (!slider) return;
-        const scrollAmount = 680;
-        if (btn.classList.contains('shelf-scroll-left')) {
-          slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        } else {
-          slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        }
-        this.playUIAudio('whoosh');
-      });
-    });
+  openCinemaModal(id) {
+    const item = DIMENSIONS_DATA.find(d => d.id === id) || DIMENSIONS_DATA[0];
+    this.activeModal = item;
 
-    // Audio Ambient Toggle
-    const audioBtn = document.getElementById('audio-toggle-btn');
-    if (audioBtn) {
-      audioBtn.addEventListener('click', () => this.toggleAmbientAudio());
-    }
-
-    // Modal close
-    const modalClose = document.getElementById('modal-close-btn');
-    const modalOverlay = document.getElementById('cinema-modal-overlay');
-    if (modalClose) {
-      modalClose.onclick = () => this.closeCinemaModal();
-    }
-    if (modalOverlay) {
-      modalOverlay.onclick = (e) => {
-        if (e.target === modalOverlay) this.closeCinemaModal();
-      };
-    }
-
-    // Keyboard controls
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        this.closeCinemaModal();
-      } else if (e.code === 'Space' && this.activeModalMovie) {
-        e.preventDefault();
-        this.togglePlayerPlayback();
-      } else if (e.key === 'm' || e.key === 'M') {
-        this.toggleAmbientAudio();
-      }
-    });
-
-    // Theater controls
-    const playPauseBtn = document.getElementById('player-play-btn');
-    if (playPauseBtn) {
-      playPauseBtn.onclick = () => this.togglePlayerPlayback();
-    }
-
-    const skipBackBtn = document.getElementById('player-skip-back');
-    if (skipBackBtn) {
-      skipBackBtn.onclick = () => this.seekPlayback(-10);
-    }
-
-    const skipForwardBtn = document.getElementById('player-skip-fwd');
-    if (skipForwardBtn) {
-      skipForwardBtn.onclick = () => this.seekPlayback(10);
-    }
-
-    const trackWrapper = document.getElementById('progress-track-wrapper');
-    if (trackWrapper) {
-      trackWrapper.onclick = (e) => {
-        const rect = trackWrapper.getBoundingClientRect();
-        const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-        this.playbackProgress = pct * 100;
-        this.updateProgressBar();
-      };
-    }
-
-    const fsBtn = document.getElementById('player-fullscreen-btn');
-    if (fsBtn) {
-      fsBtn.onclick = () => {
-        const screen = document.getElementById('modal-theater-screen');
-        if (!document.fullscreenElement) {
-          screen.requestFullscreen().catch(() => {});
-        } else {
-          document.exitFullscreen().catch(() => {});
-        }
-      };
-    }
-  }
-
-  /* --------------------------------------------------------------------------
-     CINEMA THEATER MODAL ENGINE
-  -------------------------------------------------------------------------- */
-  openCinemaModal(movieId) {
-    const movie = this.movies.find(m => m.id === movieId);
-    if (!movie) return;
-
-    this.activeModalMovie = movie;
     const overlay = document.getElementById('cinema-modal-overlay');
-    const modalTitle = document.getElementById('modal-project-title');
-    const modalMeta = document.getElementById('modal-meta-pills');
-    const modalSynopsis = document.getElementById('modal-synopsis-text');
-    const modalLaunchLive = document.getElementById('modal-launch-live');
-    const modalGithub = document.getElementById('modal-github');
+    const title = document.getElementById('modal-project-title');
+    const meta = document.getElementById('modal-meta-pills');
+    const synopsis = document.getElementById('modal-synopsis-text');
+    const launchBtn = document.getElementById('modal-launch-live');
+    const gitBtn = document.getElementById('modal-github');
     const episodesList = document.getElementById('episodes-list');
-    const ambientGlow = document.getElementById('theater-ambient-glow');
 
-    modalTitle.textContent = movie.title;
-    modalSynopsis.textContent = movie.synopsis;
+    title.textContent = item.title;
+    synopsis.textContent = item.synopsis;
 
-    modalMeta.innerHTML = `
-      <span class="badge-quality">${movie.quality}</span>
-      <span class="badge-match">${movie.matchScore}</span>
-      <span class="badge-year">${movie.year}</span>
-      <span class="badge-category">${movie.category}</span>
+    meta.innerHTML = `
+      <span class="meta-pill">${item.chapter}</span>
+      <span class="meta-pill">4K ULTRA HD</span>
+      <span class="meta-pill">DOLBY CODEC</span>
     `;
 
-    modalLaunchLive.href = movie.liveUrl;
-    modalGithub.href = movie.githubUrl;
+    launchBtn.href = item.liveUrl;
+    gitBtn.href = item.githubUrl;
 
-    if (ambientGlow) {
-      ambientGlow.style.background = `radial-gradient(circle, ${movie.color} 0%, transparent 70%)`;
-    }
-
-    // Render feature episodes
-    episodesList.innerHTML = movie.episodes.map(ep => `
-      <div class="episode-item" data-time="${ep.duration}">
-        <div class="episode-num">${ep.num}</div>
-        <div class="episode-info">
-          <div class="episode-title">${ep.title}</div>
-          <div class="episode-desc">${ep.desc}</div>
+    if (episodesList && item.episodes) {
+      episodesList.innerHTML = item.episodes.map(ep => `
+        <div class="episode-item" data-title="${ep.title}">
+          <div style="display:flex;align-items:center;gap:1.5rem;">
+            <div class="episode-num">${ep.num}</div>
+            <div>
+              <div class="episode-title">${ep.title}</div>
+              <div class="episode-desc">${ep.desc}</div>
+            </div>
+          </div>
+          <div class="episode-duration">${ep.duration}</div>
         </div>
-        <div class="episode-duration">${ep.duration}</div>
-      </div>
-    `).join('');
+      `).join('');
 
-    // Episode item clicks
-    episodesList.querySelectorAll('.episode-item').forEach(item => {
-      item.onclick = () => {
-        this.showToast(`Now Streaming: ${item.querySelector('.episode-title').textContent}`);
-        this.playbackProgress = 0;
-        this.startPlayerPlayback();
-      };
-    });
+      episodesList.querySelectorAll('.episode-item').forEach(ep => {
+        ep.onclick = () => {
+          this.showToast(`Streaming Feature: ${ep.dataset.title}`);
+          this.progress = 0;
+          this.startPlayback();
+        };
+      });
+    }
 
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
 
-    // Start playback simulation
-    this.playbackProgress = 0;
-    this.startPlayerPlayback();
-    this.playUIAudio('boom');
+    // Start theater screen playback
+    this.progress = 0;
+    this.startPlayback();
+    this.playAudioSfx('boom');
   }
 
   closeCinemaModal() {
     const overlay = document.getElementById('cinema-modal-overlay');
-    overlay.classList.remove('active');
+    if (overlay) overlay.classList.remove('active');
     document.body.style.overflow = '';
-    this.pausePlayerPlayback();
-    this.activeModalMovie = null;
+    this.pausePlayback();
+    this.activeModal = null;
   }
 
-  togglePlayerPlayback() {
-    if (this.isPlaying) {
-      this.pausePlayerPlayback();
-    } else {
-      this.startPlayerPlayback();
-    }
-  }
-
-  startPlayerPlayback() {
+  startPlayback() {
     this.isPlaying = true;
     const playBtn = document.getElementById('player-play-btn');
     if (playBtn) {
       playBtn.innerHTML = `<svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`;
     }
-
     if (this.playbackTimer) clearInterval(this.playbackTimer);
     this.playbackTimer = setInterval(() => {
-      this.playbackProgress += 0.4;
-      if (this.playbackProgress >= 100) {
-        this.playbackProgress = 0;
-      }
-      this.updateProgressBar();
+      this.progress += 0.5;
+      if (this.progress >= 100) this.progress = 0;
+      this.updatePlayerProgress();
     }, 100);
   }
 
-  pausePlayerPlayback() {
+  pausePlayback() {
     this.isPlaying = false;
     const playBtn = document.getElementById('player-play-btn');
     if (playBtn) {
@@ -639,314 +561,84 @@ class JayFlixApp {
     if (this.playbackTimer) clearInterval(this.playbackTimer);
   }
 
-  seekPlayback(secondsDelta) {
-    this.playbackProgress = Math.max(0, Math.min(100, this.playbackProgress + (secondsDelta * 0.8)));
-    this.updateProgressBar();
-    this.playUIAudio('blip');
-  }
-
-  updateProgressBar() {
-    const fillBar = document.getElementById('progress-fill-bar');
-    const handle = document.getElementById('progress-handle');
+  updatePlayerProgress() {
+    const fill = document.getElementById('progress-fill-bar');
     const timeDisplay = document.getElementById('time-display');
-
-    if (fillBar) fillBar.style.width = `${this.playbackProgress}%`;
-    if (handle) handle.style.left = `${this.playbackProgress}%`;
+    if (fill) fill.style.width = `${this.progress}%`;
 
     if (timeDisplay) {
-      const totalSec = 180;
-      const currentSec = Math.floor((this.playbackProgress / 100) * totalSec);
-      const min = Math.floor(currentSec / 60);
-      const sec = currentSec % 60;
-      timeDisplay.textContent = `0${min}:${sec < 10 ? '0' : ''}${sec} / 03:00`;
+      const curSec = Math.floor((this.progress / 100) * 180);
+      const m = Math.floor(curSec / 60);
+      const s = curSec % 60;
+      timeDisplay.textContent = `0${m}:${s < 10 ? '0' : ''}${s} / 03:00`;
     }
   }
 
   /* --------------------------------------------------------------------------
-     WATCHLIST & LIKES LOGIC
+     6. WEB AUDIO AMBIENT SYNTHESIZER ENGINE
   -------------------------------------------------------------------------- */
-  toggleWatchlist(movieId) {
-    const idx = this.watchlist.indexOf(movieId);
-    if (idx > -1) {
-      this.watchlist.splice(idx, 1);
-      this.showToast('Removed from My List');
-    } else {
-      this.watchlist.push(movieId);
-      this.showToast('Added to My List ⭐');
+  initAudioEngine() {
+    const audioBtn = document.getElementById('sound-toggle-btn');
+    if (!audioBtn) return;
+
+    audioBtn.onclick = () => this.toggleAudio();
+  }
+
+  toggleAudio() {
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (!this.audioCtx) {
+      this.audioCtx = new AudioContextClass();
     }
-    localStorage.setItem('jayflix_watchlist', JSON.stringify(this.watchlist));
-    this.renderShelves();
-    this.renderHero(this.currentHeroIndex);
-    this.playUIAudio('whoosh');
-  }
-
-  toggleLike(movieId) {
-    this.likes[movieId] = !this.likes[movieId];
-    localStorage.setItem('jayflix_likes', JSON.stringify(this.likes));
-    this.renderShelves();
-    if (this.likes[movieId]) {
-      this.showToast('Loved it! Rated 99% 💖');
-      this.triggerConfetti();
-    }
-    this.playUIAudio('blip');
-  }
-
-  triggerConfetti() {
-    // Quick celebratory visual pulse
-    const toast = document.getElementById('cinema-toast');
-    if (toast) {
-      toast.style.borderColor = 'var(--accent-red)';
-      toast.style.boxShadow = '0 0 30px var(--accent-red-glow)';
-      setTimeout(() => {
-        toast.style.borderColor = '';
-        toast.style.boxShadow = '';
-      }, 2000);
-    }
-  }
-
-  showToast(message) {
-    const toast = document.getElementById('cinema-toast');
-    if (!toast) return;
-    toast.querySelector('.toast-msg').textContent = message;
-    toast.classList.add('visible');
-    setTimeout(() => {
-      toast.classList.remove('visible');
-    }, 2800);
-  }
-
-  /* --------------------------------------------------------------------------
-     SEARCH ENGINE
-  -------------------------------------------------------------------------- */
-  setupSearch() {
-    const searchInput = document.getElementById('search-input');
-    if (!searchInput) return;
-
-    searchInput.addEventListener('input', (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      const allCards = document.querySelectorAll('.movie-card');
-
-      if (!q) {
-        allCards.forEach(card => card.style.display = '');
-        return;
-      }
-
-      allCards.forEach(card => {
-        const id = card.dataset.id;
-        const movie = this.movies.find(m => m.id === id);
-        if (!movie) return;
-
-        const match = movie.title.toLowerCase().includes(q) ||
-          movie.category.toLowerCase().includes(q) ||
-          movie.synopsis.toLowerCase().includes(q) ||
-          movie.tags.some(t => t.toLowerCase().includes(q));
-
-        card.style.display = match ? '' : 'none';
-      });
-    });
-  }
-
-  /* --------------------------------------------------------------------------
-     CANVAS PROCEDURAL VIDEO VISUALIZER (HIGH-FPS 4K CINEMATIC ENGINE)
-  -------------------------------------------------------------------------- */
-  setupCanvasVisualizer() {
-    const resizeCanvases = () => {
-      if (this.heroCanvas) {
-        this.heroCanvas.width = this.heroCanvas.clientWidth || 1280;
-        this.heroCanvas.height = this.heroCanvas.clientHeight || 720;
-      }
-      if (this.modalCanvas) {
-        this.modalCanvas.width = this.modalCanvas.clientWidth || 1280;
-        this.modalCanvas.height = this.modalCanvas.clientHeight || 720;
-      }
-    };
-
-    window.addEventListener('resize', resizeCanvases);
-    resizeCanvases();
-
-    const renderLoop = () => {
-      this.canvasFrame++;
-
-      // Render Hero Ambient Visualizer
-      if (this.heroCtx && this.heroCanvas) {
-        this.drawHeroCanvas(this.heroCtx, this.heroCanvas.width, this.heroCanvas.height);
-      }
-
-      // Render Modal Theater Visualizer if open
-      if (this.modalCtx && this.modalCanvas && this.activeModalMovie) {
-        this.drawTheaterCanvas(this.modalCtx, this.modalCanvas.width, this.modalCanvas.height, this.activeModalMovie);
-      }
-
-      this.animFrameId = requestAnimationFrame(renderLoop);
-    };
-
-    renderLoop();
-  }
-
-  drawHeroCanvas(ctx, w, h) {
-    ctx.clearRect(0, 0, w, h);
-
-    // Deep cosmic space gradient
-    const grad = ctx.createRadialGradient(w * 0.7, h * 0.4, 50, w * 0.5, h * 0.5, w * 0.8);
-    grad.addColorStop(0, 'rgba(20, 26, 45, 0.45)');
-    grad.addColorStop(0.5, 'rgba(10, 14, 25, 0.7)');
-    grad.addColorStop(1, 'rgba(7, 9, 14, 0.95)');
-    ctx.fillStyle = grad;
-    ctx.fillRect(0, 0, w, h);
-
-    // Animated holographic grid lines
-    ctx.strokeStyle = 'rgba(0, 242, 254, 0.08)';
-    ctx.lineWidth = 1;
-    const step = 45;
-    const offset = (this.canvasFrame * 0.5) % step;
-
-    for (let x = offset; x < w; x += step) {
-      ctx.beginPath();
-      ctx.moveTo(x, 0);
-      ctx.lineTo(x, h);
-      ctx.stroke();
-    }
-
-    // Floating neural particles
-    ctx.fillStyle = 'rgba(0, 242, 254, 0.4)';
-    for (let i = 0; i < 28; i++) {
-      const px = ((i * 12345 + this.canvasFrame * (0.3 + (i % 3) * 0.2)) % w);
-      const py = ((i * 54321 + Math.sin(this.canvasFrame * 0.02 + i) * 60) % h);
-      const r = (i % 4) + 1;
-      ctx.beginPath();
-      ctx.arc(px, py, r, 0, Math.PI * 2);
-      ctx.fill();
-    }
-  }
-
-  drawTheaterCanvas(ctx, w, h, movie) {
-    ctx.clearRect(0, 0, w, h);
-
-    // Themed backdrop
-    ctx.fillStyle = '#06080d';
-    ctx.fillRect(0, 0, w, h);
-
-    const cx = w / 2;
-    const cy = h / 2;
-    const time = this.canvasFrame * 0.03;
-
-    if (movie.theme === 'neural') {
-      // Neural brain synapses
-      ctx.strokeStyle = movie.color;
-      ctx.lineWidth = 1.5;
-      for (let i = 0; i < 8; i++) {
-        ctx.beginPath();
-        const rad = 120 + Math.sin(time + i) * 35;
-        ctx.arc(cx, cy, rad, i * 0.8, (i + 1) * 0.8);
-        ctx.stroke();
-      }
-    } else if (movie.theme === 'audio') {
-      // Dynamic audio waveform frequencies
-      const bars = 48;
-      const barWidth = w / bars;
-      ctx.fillStyle = movie.color;
-      for (let i = 0; i < bars; i++) {
-        const height = Math.abs(Math.sin(time + i * 0.3)) * 140 + 20;
-        ctx.fillRect(i * barWidth, cy - height / 2, barWidth - 4, height);
-      }
-    } else if (movie.theme === 'eco') {
-      // Green earth telemetry orbit rings
-      ctx.strokeStyle = '#00df89';
-      ctx.lineWidth = 2;
-      for (let i = 1; i <= 4; i++) {
-        ctx.beginPath();
-        ctx.ellipse(cx, cy, 140 * (i * 0.5), 60 * (i * 0.5), time * 0.4 * (i % 2 === 0 ? 1 : -1), 0, Math.PI * 2);
-        ctx.stroke();
-      }
-    } else {
-      // Futuristic matrix code horizon
-      ctx.strokeStyle = 'rgba(0, 242, 254, 0.4)';
-      ctx.lineWidth = 1.5;
-      for (let i = 0; i < 12; i++) {
-        const y = cy + Math.tan(i * 0.2 + (time * 0.1 % 0.5)) * 30;
-        ctx.beginPath();
-        ctx.moveTo(0, y);
-        ctx.lineTo(w, y);
-        ctx.stroke();
-      }
-    }
-
-    // Playback watermark & quality indicator
-    ctx.font = '700 13px "Fira Code", monospace';
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
-    ctx.fillText(`STREAMING: ${movie.title.toUpperCase()} // 4K 60FPS HDR`, 24, 38);
-    ctx.fillText(`CODEC: AV1-DEV // DOLBY ATMOS 7.1`, 24, 58);
-  }
-
-  /* --------------------------------------------------------------------------
-     WEB AUDIO API - AMBIENT CINEMA SOUND & UI SOUND FX
-  -------------------------------------------------------------------------- */
-  initAudioContext() {
-    if (this.audioCtx) return;
-    const AudioCtx = window.AudioContext || window.webkitAudioContext;
-    this.audioCtx = new AudioCtx();
-  }
-
-  toggleAmbientAudio() {
-    this.initAudioContext();
     if (this.audioCtx.state === 'suspended') {
       this.audioCtx.resume();
     }
 
-    const btn = document.getElementById('audio-toggle-btn');
-    if (this.isAudioPlaying) {
-      // Mute
-      if (this.ambientGain) {
-        this.ambientGain.gain.linearRampToValueAtTime(0.001, this.audioCtx.currentTime + 0.8);
+    const btn = document.getElementById('sound-toggle-btn');
+    if (this.isAudioActive) {
+      if (this.masterGain) {
+        this.masterGain.gain.linearRampToValueAtTime(0.0001, this.audioCtx.currentTime + 0.6);
       }
-      this.isAudioPlaying = false;
-      btn.classList.remove('playing');
-      btn.querySelector('.audio-label').textContent = 'Audio Off';
-      this.showToast('Ambient Audio Muted');
+      this.isAudioActive = false;
+      btn.classList.remove('active');
+      btn.querySelector('.sound-state-label').textContent = 'SOUND // OFF';
+      this.showToast('Atmospheric Sound Muted');
     } else {
-      // Unmute & play lush synth drone
-      this.startAmbientSynth();
-      this.isAudioPlaying = true;
-      btn.classList.add('playing');
-      btn.querySelector('.audio-label').textContent = 'Audio On';
-      this.showToast('Cinematic Audio Streaming 🎧');
+      this.startAmbientDrone();
+      this.isAudioActive = true;
+      btn.classList.add('active');
+      btn.querySelector('.sound-state-label').textContent = 'SOUND // ON';
+      this.showToast('Binaural Atmosphere Activated 🎧');
     }
   }
 
-  startAmbientSynth() {
+  startAmbientDrone() {
     if (!this.audioCtx) return;
 
-    this.ambientGain = this.audioCtx.createGain();
-    this.ambientGain.gain.setValueAtTime(0.001, this.audioCtx.currentTime);
-    this.ambientGain.gain.linearRampToValueAtTime(0.12, this.audioCtx.currentTime + 2);
-    this.ambientGain.connect(this.audioCtx.destination);
+    this.masterGain = this.audioCtx.createGain();
+    this.masterGain.gain.setValueAtTime(0.001, this.audioCtx.currentTime);
+    this.masterGain.gain.linearRampToValueAtTime(0.14, this.audioCtx.currentTime + 1.5);
+    this.masterGain.connect(this.audioCtx.destination);
 
-    // Root chord oscillators (C - G - D# space chord)
-    const freqs = [65.41, 98.00, 155.56, 196.00];
-    freqs.forEach(freq => {
+    // Warm deep binaural chord (C2, G2, D#3, A#3)
+    const freqs = [65.41, 98.00, 155.56, 233.08];
+    this.chordNodes = [];
+
+    freqs.forEach((freq, idx) => {
       const osc = this.audioCtx.createOscillator();
-      const oscGain = this.audioCtx.createGain();
-      osc.type = 'sine';
+      const gain = this.audioCtx.createGain();
+      osc.type = idx % 2 === 0 ? 'sine' : 'triangle';
       osc.frequency.setValueAtTime(freq, this.audioCtx.currentTime);
 
-      // Subtle LFO vibrato
-      const lfo = this.audioCtx.createOscillator();
-      lfo.frequency.setValueAtTime(0.2, this.audioCtx.currentTime);
-      const lfoGain = this.audioCtx.createGain();
-      lfoGain.gain.setValueAtTime(1.5, this.audioCtx.currentTime);
-      lfo.connect(lfoGain);
-      lfoGain.connect(osc.frequency);
-      lfo.start();
-
-      oscGain.gain.setValueAtTime(0.25, this.audioCtx.currentTime);
-      osc.connect(oscGain);
-      oscGain.connect(this.ambientGain);
+      gain.gain.setValueAtTime(0.2, this.audioCtx.currentTime);
+      osc.connect(gain);
+      gain.connect(this.masterGain);
       osc.start();
+      this.chordNodes.push(osc);
     });
   }
 
-  playUIAudio(type) {
-    if (!this.audioCtx || this.audioCtx.state === 'suspended' || !this.isAudioPlaying) return;
-
+  playAudioSfx(type) {
+    if (!this.audioCtx || !this.isAudioActive) return;
     try {
       const now = this.audioCtx.currentTime;
       const osc = this.audioCtx.createOscillator();
@@ -954,38 +646,151 @@ class JayFlixApp {
       osc.connect(gain);
       gain.connect(this.audioCtx.destination);
 
-      if (type === 'blip') {
+      if (type === 'tick') {
         osc.type = 'triangle';
-        osc.frequency.setValueAtTime(800, now);
-        osc.frequency.exponentialRampToValueAtTime(1200, now + 0.08);
-        gain.gain.setValueAtTime(0.04, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.08);
+        osc.frequency.setValueAtTime(900, now);
+        osc.frequency.exponentialRampToValueAtTime(1400, now + 0.05);
+        gain.gain.setValueAtTime(0.03, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.05);
         osc.start(now);
-        osc.stop(now + 0.09);
+        osc.stop(now + 0.06);
       } else if (type === 'whoosh') {
         osc.type = 'sine';
-        osc.frequency.setValueAtTime(400, now);
-        osc.frequency.exponentialRampToValueAtTime(150, now + 0.18);
-        gain.gain.setValueAtTime(0.06, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+        osc.frequency.setValueAtTime(320, now);
+        osc.frequency.exponentialRampToValueAtTime(80, now + 0.25);
+        gain.gain.setValueAtTime(0.08, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
         osc.start(now);
-        osc.stop(now + 0.19);
+        osc.stop(now + 0.26);
       } else if (type === 'boom') {
         osc.type = 'sine';
-        osc.frequency.setValueAtTime(120, now);
-        osc.frequency.exponentialRampToValueAtTime(40, now + 0.6);
-        gain.gain.setValueAtTime(0.18, now);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.6);
+        osc.frequency.setValueAtTime(140, now);
+        osc.frequency.exponentialRampToValueAtTime(35, now + 0.7);
+        gain.gain.setValueAtTime(0.22, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.7);
         osc.start(now);
-        osc.stop(now + 0.62);
+        osc.stop(now + 0.72);
       }
-    } catch (e) {
-      // Audio fallback safe
+    } catch (e) {}
+  }
+
+  /* --------------------------------------------------------------------------
+     7. UI INTERACTIONS & EVENT HANDLERS
+  -------------------------------------------------------------------------- */
+  initInteractions() {
+    // Modal Close
+    const closeBtn = document.getElementById('modal-close-btn');
+    const overlay = document.getElementById('cinema-modal-overlay');
+    if (closeBtn) closeBtn.onclick = () => this.closeCinemaModal();
+    if (overlay) {
+      overlay.onclick = (e) => {
+        if (e.target === overlay) this.closeCinemaModal();
+      };
+    }
+
+    // Theater Quick Button
+    const theaterQuick = document.getElementById('btn-theater-quick');
+    if (theaterQuick) {
+      theaterQuick.onclick = () => this.openCinemaModal('lexipulse-ai');
+    }
+
+    // Player controls
+    const playBtn = document.getElementById('player-play-btn');
+    if (playBtn) {
+      playBtn.onclick = () => {
+        if (this.isPlaying) this.pausePlayback();
+        else this.startPlayback();
+      };
+    }
+
+    const track = document.getElementById('progress-track-wrapper');
+    if (track) {
+      track.onclick = (e) => {
+        const rect = track.getBoundingClientRect();
+        this.progress = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100));
+        this.updatePlayerProgress();
+      };
+    }
+
+    // Keyboard Shortcuts
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') this.closeCinemaModal();
+      else if (e.code === 'Space' && this.activeModal) {
+        e.preventDefault();
+        if (this.isPlaying) this.pausePlayback();
+        else this.startPlayback();
+      } else if (e.key === 'm' || e.key === 'M') {
+        this.toggleAudio();
+      }
+    });
+  }
+
+  showToast(msg) {
+    const toast = document.getElementById('cinema-toast');
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('visible');
+    setTimeout(() => toast.classList.remove('visible'), 2800);
+  }
+
+  /* --------------------------------------------------------------------------
+     8. MAIN ANIMATION LOOP (60FPS)
+  -------------------------------------------------------------------------- */
+  animate() {
+    requestAnimationFrame(() => this.animate());
+
+    // Lerp Magnetic Cursor
+    if (this.cursorDot && this.cursorRing) {
+      this.ringPos.x += (this.cursorPos.x - this.ringPos.x) * 0.15;
+      this.ringPos.y += (this.cursorPos.y - this.ringPos.y) * 0.15;
+
+      this.cursorDot.style.transform = `translate3d(${this.cursorPos.x}px, ${this.cursorPos.y}px, 0) translate(-50%, -50%)`;
+      this.cursorRing.style.transform = `translate3d(${this.ringPos.x}px, ${this.ringPos.y}px, 0) translate(-50%, -50%)`;
+    }
+
+    // Animate 3D Artifact
+    if (this.coreGroup) {
+      // Lerp mouse tilt
+      this.mouse.x += (this.mouse.targetX - this.mouse.x) * 0.05;
+      this.mouse.y += (this.mouse.targetY - this.mouse.y) * 0.05;
+
+      if (!this.mouse.isDown) {
+        this.coreGroup.rotation.y += 0.006;
+        this.coreGroup.rotation.x = this.mouse.y * 0.35;
+        this.coreGroup.rotation.z = this.mouse.x * 0.2;
+      }
+
+      if (this.outerMesh) {
+        this.outerMesh.rotation.y -= 0.003;
+        this.outerMesh.rotation.x += 0.002;
+      }
+
+      if (this.ringMesh1 && this.ringMesh2) {
+        this.ringMesh1.rotation.z += 0.008;
+        this.ringMesh2.rotation.y += 0.006;
+      }
+    }
+
+    // Animate Particles
+    if (this.particles) {
+      this.particles.rotation.y += 0.0006;
+      this.particles.rotation.x += 0.0003;
+    }
+
+    // Light tracking mouse
+    if (this.pointLightMouse) {
+      this.pointLightMouse.position.x = this.mouse.x * 5;
+      this.pointLightMouse.position.y = this.mouse.y * 5;
+    }
+
+    // Render 3D WebGL Scene
+    if (this.renderer && this.scene && this.camera) {
+      this.renderer.render(this.scene, this.camera);
     }
   }
 }
 
-// Boot application when DOM is ready
+// Launch on DOM ready
 document.addEventListener('DOMContentLoaded', () => {
-  window.jayflixApp = new JayFlixApp();
+  window.avantGardeApp = new AvantGardeExperience();
 });
